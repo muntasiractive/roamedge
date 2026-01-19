@@ -1,0 +1,28 @@
+/* Empty State Styling - Consistent across all views */
+.empty-state {
+    -fx-alignment: CENTER;
+    -fx-spacing: 20;
+    -fx-padding: 60;
+    -fx-background-color: transparent;
+}
+
+.empty-state .icon,
+.empty-state-icon {
+    -fx-icon-color: -roam-blue;
+}
+
+.empty-state .title,
+.empty-state-title {
+    -fx-font-family: 'Poppins Bold';
+    -fx-font-size: 24px;
+    -fx-text-fill: -roam-text-primary;
+}
+
+.empty-state .description,
+.empty-state-description {
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 16px;
+    -fx-text-fill: -roam-text-secondary;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}

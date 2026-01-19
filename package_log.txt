@@ -1,0 +1,393 @@
+Initialized native services in: C:\Users\munta\scoop\apps\gradle\current\.gradle\native
+Initialized jansi services in: C:\Users\munta\scoop\apps\gradle\current\.gradle\native
+Found daemon DaemonInfo{pid=18236, address=[bc04d487-7718-4113-b637-94c52ea9a3b0 port:59260, addresses:[/127.0.0.1]], state=Idle, lastBusy=1768843875562, context=DefaultDaemonContext[uid=f3a0a330-781f-4d11-b55c-2b2e7a493cc4,javaHome=C:\Users\munta\.antigravity\extensions\redhat.java-1.51.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\munta\scoop\apps\gradle\current\.gradle\daemon,pid=18236,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Users\munta\scoop\apps\temurin21-jdk\current (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=f3a0a330-781f-4d11-b55c-2b2e7a493cc4,javaHome=C:\Users\munta\.antigravity\extensions\redhat.java-1.51.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\munta\scoop\apps\gradle\current\.gradle\daemon,pid=18236,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 24236). The daemon log file: C:\Users\munta\scoop\apps\gradle\current\.gradle\daemon\8.14\daemon-24236.out.log
+Starting 7th build in daemon [uptime: 16 mins 49.196 secs, performance: 100%, GC rate: 0.06/s, heap usage: 10% of 512 MiB, non-heap usage: 20% of 384 MiB]
+Using 12 worker leases.
+Not watching A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\settings.gradle'.
+Projects loaded. Root project using build file 'A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build.gradle'.
+Included projects: [root project 'roam']
+
+> Configure project :
+Evaluating root project 'roam' using build file 'A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'application']
+Resolved plugin [id: 'org.openjfx.javafxplugin', version: '0.1.0']
+Resolved plugin [id: 'org.beryx.jlink', version: '3.0.1']
+------------------------------------------------------------------------
+Detecting the operating system and CPU architecture
+------------------------------------------------------------------------
+os.detected.name=windows
+os.detected.arch=x86_64
+os.detected.bitness=64
+os.detected.version=10.0
+os.detected.version.major=10
+os.detected.version.minor=0
+os.detected.classifier=windows-x86_64
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'jpackageImage'
+Selected primary task 'clean' from project :
+Selected primary task 'jpackageImage' from project :
+Tasks to be executed: [task ':clean', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':prepareMergedJarsDir', task ':createMergedModule', task ':createDelegatingModules', task ':prepareModulesDir', task ':jlink', task ':jpackageImage']
+Tasks that were excluded: []
+Resolve mutations for :clean (Thread[#432,Execution worker,5,main]) started.
+:clean (Thread[#435,Execution worker Thread 4,5,main]) started.
+destroyer locations for task group 0 (Thread[#433,Execution worker Thread 2,5,main]) started.
+
+> Task :clean
+Caching disabled for task ':clean' because:
+  Build cache is disabled
+Task ':clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :compileJava (Thread[#435,Execution worker Thread 4,5,main]) started.
+:compileJava (Thread[#435,Execution worker Thread 4,5,main]) started.
+
+> Task :compileJava
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  Output property 'destinationDirectory' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\classes\java\main has been removed.
+  Output property 'destinationDirectory' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\classes\java\main\com has been removed.
+  Output property 'destinationDirectory' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\classes\java\main\com\roam has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':compileJava'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Users\munta\scoop\apps\temurin21-jdk\current'.
+Compiling with JDK Java compiler API.
+Note: A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\src\main\java\com\roam\view\components\OperationTableView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\src\main\java\com\roam\view\components\OperationTableView.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Class dependency analysis for incremental compilation took 0.063 secs.
+Created classpath snapshot for incremental compilation in 0.028 secs.
+Resolve mutations for :processResources (Thread[#435,Execution worker Thread 4,5,main]) started.
+:processResources (Thread[#435,Execution worker Thread 4,5,main]) started.
+
+> Task :processResources
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':processResources' is not up-to-date because:
+  Output property 'destinationDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\resources\main has been removed.
+  Output property 'destinationDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\resources\main\db has been removed.
+  Output property 'destinationDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\resources\main\db\migration has been removed.
+  and more...
+Resolve mutations for :classes (Thread[#435,Execution worker Thread 4,5,main]) started.
+:classes (Thread[#435,Execution worker Thread 4,5,main]) started.
+
+> Task :classes
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :jar (Thread[#435,Execution worker Thread 4,5,main]) started.
+:jar (Thread[#435,Execution worker Thread 4,5,main]) started.
+
+> Task :jar
+Caching disabled for task ':jar' because:
+  Build cache is disabled
+  Not worth caching
+Task ':jar' is not up-to-date because:
+  Output property 'archiveFile' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\libs\roam-1.0.0.jar has been removed.
+Resolve mutations for :prepareMergedJarsDir (Thread[#435,Execution worker Thread 4,5,main]) started.
+:prepareMergedJarsDir (Thread[#435,Execution worker Thread 4,5,main]) started.
+
+> Task :prepareMergedJarsDir
+Caching disabled for task ':prepareMergedJarsDir' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Task ':prepareMergedJarsDir' is not up-to-date because:
+  Output property 'mergedJarsDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars has been removed.
+  Output property 'mergedJarsDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars\animatefx has been removed.
+  Output property 'mergedJarsDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars\animatefx\animation has been removed.
+  and more...
+Executing: C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/javac -cp . -d . JavaVersion.java
+
+Executing: [C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/java, -cp, ., JavaVersion]
+21
+
+javaVersion(C:\Users\munta\scoop\apps\temurin21-jdk\current): 21
+
+taskData: org.beryx.jlink.data.PrepareMergedJarsDirTaskData(forceMergedJarPrefixes:[], extraDependenciesPrefixes:[], mergedJarsDir:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars, jlinkJarsDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/jlinkjars, nonModularJarsDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/nonmodjars, tmpJarsDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/tmpjars, configuration:configuration ':runtimeClasspath', javaHome:C:\Users\munta\scoop\apps\temurin21-jdk\current, jvmVersion:21, jarExcludes:[:])
+extraDeps: []
+modularJars: [atlantafx-base-2.0.1.jar, javafx-controls-21-win.jar, javafx-graphics-21-win.jar, javafx-base-21-win.jar, ikonli-javafx-12.3.1.jar, ikonli-core-12.3.1.jar, ikonli-feather-pack-12.3.1.jar, ikonli-material2-pack-12.3.1.jar, ikonli-bootstrapicons-pack-12.3.1.jar, ikonli-dashicons-pack-12.3.1.jar, ikonli-boxicons-pack-12.3.1.jar, jakarta.persistence-api-3.1.0.jar, jakarta.transaction-api-2.0.1.jar, jboss-logging-3.5.0.Final.jar, hibernate-commons-annotations-6.0.6.Final.jar, classmate-1.5.1.jar, byte-buddy-1.14.7.jar, jaxb-runtime-4.0.2.jar, jaxb-core-4.0.2.jar, jakarta.xml.bind-api-4.0.0.jar, jakarta.activation-api-2.1.1.jar, angus-activation-2.0.0.jar, txw2-4.0.2.jar, istack-commons-runtime-4.1.1.jar, jakarta.inject-api-2.0.1.jar, jackson-dataformat-toml-2.16.1.jar, jackson-core-2.16.1.jar, jackson-databind-2.16.1.jar, jackson-annotations-2.16.1.jar, gson-2.10.1.jar, view-11.12.7.jar, ical4j-4.0.0-rc5.jar, slf4j-api-2.0.9.jar, commons-lang3-3.14.0.jar, threeten-extra-1.7.2.jar, ikonli-fontawesome-pack-12.3.1.jar, controlsfx-11.1.1.jar, logback-classic-1.4.14.jar, logback-core-1.4.14.jar, jackson-datatype-jsr310-2.16.1.jar, lucene-core-9.9.1.jar, lucene-queryparser-9.9.1.jar, lucene-sandbox-9.9.1.jar, lucene-queries-9.9.1.jar, lucene-highlighter-9.9.1.jar, lucene-memory-9.9.1.jar, jakarta.validation-api-3.0.2.jar, javafx-fxml-21-win.jar, javafx-web-21-win.jar, javafx-media-21-win.jar]
+nonModularJars: [hibernate-core-6.4.1.Final.jar, jandex-3.1.2.jar, antlr4-runtime-4.13.0.jar, h2-2.2.224.jar, flyway-core-10.4.1.jar, commons-codec-1.16.0.jar, richtextfx-0.11.2.jar, undofx-2.1.1.jar, reactfx-2.0-M5.jar, flowless-0.7.2.jar, wellbehavedfx-0.3.3.jar, commonmark-0.21.0.jar, commonmark-ext-gfm-tables-0.21.0.jar, commonmark-ext-gfm-strikethrough-0.21.0.jar, commonmark-ext-task-list-items-0.21.0.jar, biweekly-0.6.8.jar, vinnie-2.0.2.jar, lucene-analyzers-common-8.11.2.jar, spring-security-crypto-6.2.1.jar, commons-logging-1.2.jar, guava-32.1.3-jre.jar, failureaccess-1.0.1.jar, listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, jsr305-3.0.2.jar, checker-qual-3.37.0.jar, error_prone_annotations-2.21.1.jar, hibernate-validator-8.0.1.Final.jar, jakarta.el-4.0.2.jar, jakarta.el-api-4.0.0.jar, encoder-1.2.3.jar, animated-1.3.0.jar, AnimateFX-1.2.4.jar]
+modularJarsRequiredByNonModularJars: [jakarta.persistence-api-3.1.0.jar, jakarta.transaction-api-2.0.1.jar, jboss-logging-3.5.0.Final.jar, hibernate-commons-annotations-6.0.6.Final.jar, classmate-1.5.1.jar, byte-buddy-1.14.7.jar, jaxb-runtime-4.0.2.jar, jaxb-core-4.0.2.jar, jakarta.xml.bind-api-4.0.0.jar, jakarta.activation-api-2.1.1.jar, angus-activation-2.0.0.jar, txw2-4.0.2.jar, istack-commons-runtime-4.1.1.jar, jakarta.inject-api-2.0.1.jar, jackson-dataformat-toml-2.16.1.jar, jackson-core-2.16.1.jar, jackson-databind-2.16.1.jar, jackson-annotations-2.16.1.jar, gson-2.10.1.jar, lucene-core-9.9.1.jar, jakarta.validation-api-3.0.2.jar]
+artifactsHandledAsNonModular: []
+Copying modular jars required by non-modular jars to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/jlinkjars...
+Copying mon-modular jars to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/nonmodjars...
+Merging content into A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars...
+[ant:move] Moving 6771 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moved 395 empty directories to 1 empty directory under A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 167 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 218 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 1053 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 410 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 242 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 135 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 22 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 357 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 44 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 42 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 161 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 20 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 13 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 11 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 440 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 31 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 685 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 47 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 33 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 2032 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 5 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 3 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 38 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 361 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 30 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 943 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 119 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 55 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 25 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 67 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+[ant:move] Moving 85 files to A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase
+Resolve mutations for :createMergedModule (Thread[#435,Execution worker Thread 4,5,main]) started.
+:createMergedModule (Thread[#435,Execution worker Thread 4,5,main]) started.
+
+> Task :createMergedModule
+Caching disabled for task ':createMergedModule' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Task ':createMergedModule' is not up-to-date because:
+  Task has failed previously.
+taskData: org.beryx.jlink.data.CreateMergedModuleTaskData(forceMergedJarPrefixes:[], extraDependenciesPrefixes:[], mergedModuleName:com.roam.merged.module, mergedModuleJarVersion:1.0.0, mergedModuleInfo:, useJdeps:no, mergedJarsDir:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars, javaHome:C:\Users\munta\scoop\apps\temurin21-jdk\current, configuration:configuration ':runtimeClasspath', mergedModuleJar:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\jlinkjars\roam.merged.module-1.0.0.jar, jlinkJarsDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/jlinkjars, tmpMergedModuleDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/tmpmerged, tmpModuleInfoDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/tmpmodinfo, tmpJarsDirPath:A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/tmpjars, mergedModuleVersion:1.0.0)
+Archive A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars into A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/tmpmerged/roam.merged.module-1.0.0.jar...
+Generating module-info of module com.roam.merged.module in A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars...
+extraDeps: []
+modularJars: [atlantafx-base-2.0.1.jar, javafx-controls-21-win.jar, javafx-graphics-21-win.jar, javafx-base-21-win.jar, ikonli-javafx-12.3.1.jar, ikonli-core-12.3.1.jar, ikonli-feather-pack-12.3.1.jar, ikonli-material2-pack-12.3.1.jar, ikonli-bootstrapicons-pack-12.3.1.jar, ikonli-dashicons-pack-12.3.1.jar, ikonli-boxicons-pack-12.3.1.jar, jakarta.persistence-api-3.1.0.jar, jakarta.transaction-api-2.0.1.jar, jboss-logging-3.5.0.Final.jar, hibernate-commons-annotations-6.0.6.Final.jar, classmate-1.5.1.jar, byte-buddy-1.14.7.jar, jaxb-runtime-4.0.2.jar, jaxb-core-4.0.2.jar, jakarta.xml.bind-api-4.0.0.jar, jakarta.activation-api-2.1.1.jar, angus-activation-2.0.0.jar, txw2-4.0.2.jar, istack-commons-runtime-4.1.1.jar, jakarta.inject-api-2.0.1.jar, jackson-dataformat-toml-2.16.1.jar, jackson-core-2.16.1.jar, jackson-databind-2.16.1.jar, jackson-annotations-2.16.1.jar, gson-2.10.1.jar, view-11.12.7.jar, ical4j-4.0.0-rc5.jar, slf4j-api-2.0.9.jar, commons-lang3-3.14.0.jar, threeten-extra-1.7.2.jar, ikonli-fontawesome-pack-12.3.1.jar, controlsfx-11.1.1.jar, logback-classic-1.4.14.jar, logback-core-1.4.14.jar, jackson-datatype-jsr310-2.16.1.jar, lucene-core-9.9.1.jar, lucene-queryparser-9.9.1.jar, lucene-sandbox-9.9.1.jar, lucene-queries-9.9.1.jar, lucene-highlighter-9.9.1.jar, lucene-memory-9.9.1.jar, jakarta.validation-api-3.0.2.jar, javafx-fxml-21-win.jar, javafx-web-21-win.jar, javafx-media-21-win.jar]
+nonModularJars: [hibernate-core-6.4.1.Final.jar, jandex-3.1.2.jar, antlr4-runtime-4.13.0.jar, h2-2.2.224.jar, flyway-core-10.4.1.jar, commons-codec-1.16.0.jar, richtextfx-0.11.2.jar, undofx-2.1.1.jar, reactfx-2.0-M5.jar, flowless-0.7.2.jar, wellbehavedfx-0.3.3.jar, commonmark-0.21.0.jar, commonmark-ext-gfm-tables-0.21.0.jar, commonmark-ext-gfm-strikethrough-0.21.0.jar, commonmark-ext-task-list-items-0.21.0.jar, biweekly-0.6.8.jar, vinnie-2.0.2.jar, lucene-analyzers-common-8.11.2.jar, spring-security-crypto-6.2.1.jar, commons-logging-1.2.jar, guava-32.1.3-jre.jar, failureaccess-1.0.1.jar, listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, jsr305-3.0.2.jar, checker-qual-3.37.0.jar, error_prone_annotations-2.21.1.jar, hibernate-validator-8.0.1.Final.jar, jakarta.el-4.0.2.jar, jakarta.el-api-4.0.0.jar, encoder-1.2.3.jar, animated-1.3.0.jar, AnimateFX-1.2.4.jar]
+modularJarsRequiredByNonModularJars: [jakarta.persistence-api-3.1.0.jar, jakarta.transaction-api-2.0.1.jar, jboss-logging-3.5.0.Final.jar, hibernate-commons-annotations-6.0.6.Final.jar, classmate-1.5.1.jar, byte-buddy-1.14.7.jar, jaxb-runtime-4.0.2.jar, jaxb-core-4.0.2.jar, jakarta.xml.bind-api-4.0.0.jar, jakarta.activation-api-2.1.1.jar, angus-activation-2.0.0.jar, txw2-4.0.2.jar, istack-commons-runtime-4.1.1.jar, jakarta.inject-api-2.0.1.jar, jackson-dataformat-toml-2.16.1.jar, jackson-core-2.16.1.jar, jackson-databind-2.16.1.jar, jackson-annotations-2.16.1.jar, gson-2.10.1.jar, lucene-core-9.9.1.jar, jakarta.validation-api-3.0.2.jar]
+artifactsHandledAsNonModular: []
+Executing: C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/javac -cp . -d . ModuleManager.java
+
+Executing: [C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/java, -cp, ., ModuleManager, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\io.github.mkpaz\atlantafx-base\2.0.1\51d2bfa35150921fe5b8b5e3c1a1bf78a6d57684\atlantafx-base-2.0.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-controls\21\76e295d84578a3d9688e092aae3f2ff1cf3e83a9\javafx-controls-21-win.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-graphics\21\8083d97ea236079c82cf8e3463b62990340346d4\javafx-graphics-21-win.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-base\21\a7e334fbb619859e1010cad06ddcf16e774c87a0\javafx-base-21-win.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-javafx\12.3.1\6df78c8f23f4509f88b8e05c32da64b7dc494356\ikonli-javafx-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-core\12.3.1\50c5658c1a5aeeec30320c6be71274d01f5fb869\ikonli-core-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-feather-pack\12.3.1\5d2e77a7dc19f325b277b5369be7dafe1d413017\ikonli-feather-pack-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-material2-pack\12.3.1\1403f36cafcff3d2dd293df01131d8835e6b3fa1\ikonli-material2-pack-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-bootstrapicons-pack\12.3.1\8b0dc79a85c903a53792fee21aa696944ade762a\ikonli-bootstrapicons-pack-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-dashicons-pack\12.3.1\ecc48f5e6ff7837ed7048e6c4da4899aba6a3df\ikonli-dashicons-pack-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-boxicons-pack\12.3.1\fe15d11e1a733e2af3af9cf8b4b4b4e4408d83cb\ikonli-boxicons-pack-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.persistence\jakarta.persistence-api\3.1.0\66901fa1c373c6aff65c13791cc11da72060a8d6\jakarta.persistence-api-3.1.0.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.transaction\jakarta.transaction-api\2.0.1\51a520e3fae406abb84e2e1148e6746ce3f80a1a\jakarta.transaction-api-2.0.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.5.0.Final\c19307cc11f28f5e2679347e633a3294d865334d\jboss-logging-3.5.0.Final.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\6.0.6.Final\77a5f94b56d49508e0ee334751db5b78e5ccd50c\hibernate-commons-annotations-6.0.6.Final.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.5.1\3fe0bed568c62df5e89f4f174c101eab25345b6c\classmate-1.5.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.7\34efde5f0bb93afc94aaf9d400521899c4806873\byte-buddy-1.14.7.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\4.0.2\e4e4e0c5b0d42054d00dc4023901572a60d368c7\jaxb-runtime-4.0.2.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-core\4.0.2\8c29249f6c10f4ee08967783831580b0f5c5360\jaxb-core-4.0.2.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\4.0.0\bbb399208d288b15ec101fa4fcfc4bd77cedc97a\jakarta.xml.bind-api-4.0.0.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.activation\jakarta.activation-api\2.1.1\88c774ab863a21fb2fc4219af95379fafe499a31\jakarta.activation-api-2.1.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.eclipse.angus\angus-activation\2.0.0\72369f4e2314d38de2dcbb277141ef0226f73151\angus-activation-2.0.0.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\4.0.2\24e167be69c29ebb7ee0a3b1f9b546f1dfd111fc\txw2-4.0.2.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\4.1.1\9b3769c76235bc283b060da4fae2318c6d53f07e\istack-commons-runtime-4.1.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.1\4c28afe1991a941d7702fe1362c365f0a8641d1e\jakarta.inject-api-2.0.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.dataformat\jackson-dataformat-toml\2.16.1\2f1827686617fe5ef03de721656c2238f7050536\jackson-dataformat-toml-2.16.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.16.1\9456bb3cdd0f79f91a5f730a1b1bb041a380c91f\jackson-core-2.16.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.16.1\2a16efeb840c45af1e2f31753dfe76795278b73\jackson-databind-2.16.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.16.1\fd441d574a71e7d10a4f73de6609f881d8cdfeec\jackson-annotations-2.16.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10.1\b3add478d4382b78ea20b1671390a858002feb6c\gson-2.10.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.calendarfx\view\11.12.7\b227fd95ad772bcb2acb877edbd6d3521982d03\view-11.12.7.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.mnode.ical4j\ical4j\4.0.0-rc5\bdce23e80db81d943f79ac766544434b9dc82059\ical4j-4.0.0-rc5.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.9\7cf2726fdcfbc8610f9a71fb3ed639871f315340\slf4j-api-2.0.9.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.14.0\1ed471194b02f2c6cb734a0cd6f6f107c673afae\commons-lang3-3.14.0.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.threeten\threeten-extra\1.7.2\b2e5f470c6c97fee4c05c03eb9c546695a7784c2\threeten-extra-1.7.2.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-fontawesome-pack\12.3.1\cc471319e1e684bc646fc8050e389f82a9b4358d\ikonli-fontawesome-pack-12.3.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.controlsfx\controlsfx\11.1.1\d303c563c23d5176346e8d05932afbec421060ae\controlsfx-11.1.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.4.14\d98bc162275134cdf1518774da4a2a17ef6fb94d\logback-classic-1.4.14.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.4.14\4d3c2248219ac0effeb380ed4c5280a80bf395e8\logback-core-1.4.14.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.16.1\36a418325c618e440e5ccb80b75c705d894f50bd\jackson-datatype-jsr310-2.16.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-core\9.9.1\55249fa9a0ed321adcf8283c6f3b649a6812b0a9\lucene-core-9.9.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-queryparser\9.9.1\12d844fe224f6f97c510ac20d68903ed7f626f6c\lucene-queryparser-9.9.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-sandbox\9.9.1\272e588fd3d8c0a401b28a1ac715f27044bf62ec\lucene-sandbox-9.9.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-queries\9.9.1\d157547bd24edc8e9d9d59c273107dc3ac5fde5e\lucene-queries-9.9.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-highlighter\9.9.1\30928513461bf79a5cb057e84da7d34a1e53227d\lucene-highlighter-9.9.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-memory\9.9.1\49f820b1b321860fa42a4f7583e8ed8f77b9c1c2\lucene-memory-9.9.1.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.validation\jakarta.validation-api\3.0.2\92b6631659ba35ca09e44874d3eb936edfeee532\jakarta.validation-api-3.0.2.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-fxml\21\4a1cd270e1ae03ae73110eb68622afd457c6f903\javafx-fxml-21-win.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-web\21\f53cab2e01c28dd3a26d250145e1ddc86fcf125a\javafx-web-21-win.jar, C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-media\21\f5e89e981be5c3c6f316b6f8b7b49686cd7c6d58\javafx-media-21-win.jar, C:\Users\munta\scoop\apps\temurin21-jdk\current/jmods]
+atlantafx.base:atlantafx.base.layout,atlantafx.base.util,atlantafx.base.controls,atlantafx.base.theme
+javafx.controls:javafx.scene.control.cell,javafx.scene.chart,com.sun.javafx.scene.control.skin,com.sun.javafx.scene.control,com.sun.javafx.scene.control.inputmap,com.sun.javafx.scene.control.behavior,javafx.scene.control,javafx.scene.control.skin
+javafx.graphics:com.sun.javafx.tk,com.sun.glass.ui,javafx.scene.effect,javafx.scene.canvas,com.sun.javafx.font,com.sun.javafx.geom,com.sun.javafx.text,javafx.scene.paint,com.sun.javafx.util,com.sun.javafx.scene.text,com.sun.javafx.scene.input,javafx.scene.text,javafx.geometry,javafx.scene.image,com.sun.javafx.scene.traversal,javafx.scene.shape,javafx.print,com.sun.javafx.iio,com.sun.javafx.css,com.sun.javafx.geom.transform,com.sun.javafx.embed,javafx.concurrent,javafx.scene.layout,javafx.scene.transform,com.sun.prism.paint,javafx.animation,com.sun.scenario.effect,javafx.application,com.sun.javafx.menu,com.sun.scenario.effect.impl.prism,com.sun.javafx.application,javafx.scene.input,javafx.scene.robot,com.sun.javafx.scene.layout,com.sun.prism.image,javafx.stage,com.sun.javafx.stage,com.sun.javafx.sg.prism,com.sun.javafx.scene,com.sun.scenario.effect.impl,com.sun.javafx.cursor,javafx.css.converter,javafx.scene,com.sun.prism,javafx.css,com.sun.glass.utils
+javafx.base:com.sun.javafx.runtime,com.sun.javafx.event,com.sun.javafx.beans,com.sun.javafx.collections,com.sun.javafx,javafx.beans,javafx.util,com.sun.javafx.logging,javafx.collections.transformation,javafx.beans.property,javafx.collections,javafx.util.converter,com.sun.javafx.binding,javafx.beans.binding,com.sun.javafx.reflect,javafx.beans.value,javafx.beans.property.adapter,com.sun.javafx.property,javafx.event
+org.kordamp.ikonli.javafx:org.kordamp.ikonli.javafx
+org.kordamp.ikonli.core:org.kordamp.ikonli
+org.kordamp.ikonli.feather:org.kordamp.ikonli.feather
+org.kordamp.ikonli.material2:org.kordamp.ikonli.material2
+org.kordamp.ikonli.bootstrapicons:org.kordamp.ikonli.bootstrapicons
+org.kordamp.ikonli.dashicons:org.kordamp.ikonli.dashicons
+org.kordamp.ikonli.boxicons:org.kordamp.ikonli.boxicons
+jakarta.persistence:jakarta.persistence.spi,jakarta.persistence.metamodel,jakarta.persistence.criteria,jakarta.persistence
+jakarta.transaction:jakarta.transaction
+org.jboss.logging:org.jboss.logging
+org.hibernate.commons.annotations:org.hibernate.annotations.common.reflection.java,org.hibernate.annotations.common.annotationfactory,org.hibernate.annotations.common.reflection
+com.fasterxml.classmate:com.fasterxml.classmate.types,com.fasterxml.classmate.util,com.fasterxml.classmate,com.fasterxml.classmate.members
+net.bytebuddy:net.bytebuddy.jar.asm,net.bytebuddy.implementation.bytecode.constant,net.bytebuddy.dynamic.scaffold,net.bytebuddy.jar.asm.commons,net.bytebuddy.implementation.bytecode.assign,net.bytebuddy.implementation.bytecode.assign.primitive,net.bytebuddy.agent.builder,net.bytebuddy.build,net.bytebuddy.description,net.bytebuddy.dynamic.scaffold.inline,net.bytebuddy.pool,net.bytebuddy.description.field,net.bytebuddy.utility.privilege,net.bytebuddy.implementation.bind.annotation,net.bytebuddy.implementation.bytecode.collection,net.bytebuddy.implementation.bytecode.assign.reference,net.bytebuddy.implementation.auxiliary,net.bytebuddy.description.enumeration,net.bytebuddy,net.bytebuddy.implementation,net.bytebuddy.asm,net.bytebuddy.utility.visitor,net.bytebuddy.description.modifier,net.bytebuddy.description.type,net.bytebuddy.dynamic.scaffold.subclass,net.bytebuddy.implementation.attribute,net.bytebuddy.dynamic.loading,net.bytebuddy.jar.asm.signature,net.bytebuddy.dynamic,net.bytebuddy.implementation.bytecode.member,net.bytebuddy.description.method,net.bytebuddy.utility,net.bytebuddy.matcher,net.bytebuddy.utility.nullability,net.bytebuddy.description.annotation,net.bytebuddy.implementation.bytecode,net.bytebuddy.implementation.bind
+org.glassfish.jaxb.runtime:org.glassfish.jaxb.runtime.v2.schemagen,org.glassfish.jaxb.runtime.v2,org.glassfish.jaxb.runtime.v2.model.impl,org.glassfish.jaxb.runtime.v2.runtime.property,org.glassfish.jaxb.runtime.v2.model.runtime,org.glassfish.jaxb.runtime.v2.util,org.glassfish.jaxb.runtime.v2.schemagen.xmlschema,org.glassfish.jaxb.runtime.unmarshaller,org.glassfish.jaxb.runtime.v2.runtime,org.glassfish.jaxb.runtime.v2.runtime.unmarshaller,org.glassfish.jaxb.runtime.v2.runtime.output,org.glassfish.jaxb.runtime.v2.runtime.reflect,org.glassfish.jaxb.runtime.api,org.glassfish.jaxb.runtime.util,org.glassfish.jaxb.runtime.marshaller,org.glassfish.jaxb.runtime.v2.model.annotation,org.glassfish.jaxb.runtime
+org.glassfish.jaxb.core:org.glassfish.jaxb.core.v2.model.core,org.glassfish.jaxb.core.v2.util,org.glassfish.jaxb.core.annotation,org.glassfish.jaxb.core.v2.model.util,org.glassfish.jaxb.core,org.glassfish.jaxb.core.api.impl,org.glassfish.jaxb.core.v2.runtime.unmarshaller,org.glassfish.jaxb.core.api,org.glassfish.jaxb.core.v2.runtime,org.glassfish.jaxb.core.v2.schemagen.episode,org.glassfish.jaxb.core.v2.model.nav,org.glassfish.jaxb.core.v2,org.glassfish.jaxb.core.v2.model.impl,org.glassfish.jaxb.core.unmarshaller,org.glassfish.jaxb.core.marshaller,org.glassfish.jaxb.core.v2.model.annotation,org.glassfish.jaxb.core.util
+jakarta.xml.bind:jakarta.xml.bind.util,jakarta.xml.bind,jakarta.xml.bind.annotation,jakarta.xml.bind.helpers,jakarta.xml.bind.attachment,jakarta.xml.bind.annotation.adapters
+jakarta.activation:jakarta.activation.spi,jakarta.activation
+org.eclipse.angus.activation:org.eclipse.angus.activation
+com.sun.xml.txw2:com.sun.xml.txw2.output,com.sun.xml.txw2,com.sun.xml.txw2.annotation
+com.sun.istack.runtime:com.sun.istack,com.sun.istack.localization,com.sun.istack.logging
+jakarta.inject:jakarta.inject
+com.fasterxml.jackson.dataformat.toml:com.fasterxml.jackson.dataformat.toml
+com.fasterxml.jackson.core:com.fasterxml.jackson.core.base,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.exc,com.fasterxml.jackson.core.json.async,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.filter,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.async,com.fasterxml.jackson.core,com.fasterxml.jackson.core.sym
+com.fasterxml.jackson.databind:com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.json,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.jsonschema,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.ext,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.jsonFormatVisitors
+com.fasterxml.jackson.annotation:com.fasterxml.jackson.annotation
+com.google.gson:com.google.gson,com.google.gson.annotations,com.google.gson.reflect,com.google.gson.stream
+com.calendarfx.view:com.calendarfx.view.popover,impl.com.calendarfx.view.page,impl.com.calendarfx.view.popover,impl.com.calendarfx.view.print,impl.com.calendarfx.view.util,com.calendarfx.util,com.calendarfx.model,com.calendarfx.view.page,com.calendarfx.view.print,impl.com.calendarfx.view,com.calendarfx.view
+ical4j.core:net.fortuna.ical4j.model,net.fortuna.ical4j.validate.component,net.fortuna.ical4j.data,net.fortuna.ical4j.filter.predicate,net.fortuna.ical4j.filter,net.fortuna.ical4j.agent,net.fortuna.ical4j.model.component,net.fortuna.ical4j.validate,net.fortuna.ical4j.filter.expression,net.fortuna.ical4j.transform.calendar,net.fortuna.ical4j.model.property.immutable,net.fortuna.ical4j.validate.property,net.fortuna.ical4j.model.property,net.fortuna.ical4j.transform.component,net.fortuna.ical4j.transform,net.fortuna.ical4j.transform.property,net.fortuna.ical4j.model.parameter,net.fortuna.ical4j.util,net.fortuna.ical4j.transform.recurrence
+org.slf4j:org.slf4j,org.slf4j.spi,org.slf4j.event,org.slf4j.helpers
+org.apache.commons.lang3:org.apache.commons.lang3,org.apache.commons.lang3.reflect,org.apache.commons.lang3.tuple,org.apache.commons.lang3.util,org.apache.commons.lang3.text.translate,org.apache.commons.lang3.exception,org.apache.commons.lang3.concurrent,org.apache.commons.lang3.builder,org.apache.commons.lang3.function,org.apache.commons.lang3.event,org.apache.commons.lang3.stream,org.apache.commons.lang3.text,org.apache.commons.lang3.concurrent.locks,org.apache.commons.lang3.arch,org.apache.commons.lang3.compare,org.apache.commons.lang3.time,org.apache.commons.lang3.mutable,org.apache.commons.lang3.math
+org.threeten.extra:org.threeten.extra.chrono,org.threeten.extra,org.threeten.extra.scale
+org.kordamp.ikonli.fontawesome:org.kordamp.ikonli.fontawesome
+org.controlsfx.controls:org.controlsfx.control.action,org.controlsfx.glyphfont,org.controlsfx.validation.decoration,org.controlsfx.control.cell,org.controlsfx.control.tableview2,org.controlsfx.control.tableview2.filter.filtereditor,org.controlsfx.control.tableview2.filter.parser,org.controlsfx.control.tableview2.filter.popupfilter,org.controlsfx.control.spreadsheet,org.controlsfx.dialog,org.controlsfx.control,impl.org.controlsfx.skin,org.controlsfx.control.tableview2.filter.filtermenubutton,org.controlsfx.property,org.controlsfx.control.textfield,org.controlsfx.control.tableview2.event,org.controlsfx.control.table,org.controlsfx.control.tableview2.actions,org.controlsfx.validation,org.controlsfx.control.tableview2.cell,org.controlsfx.control.decoration,org.controlsfx.property.editor,org.controlsfx.tools
+ch.qos.logback.classic:ch.qos.logback.classic.jul,ch.qos.logback.classic.html,ch.qos.logback.classic.net,ch.qos.logback.classic.spi,ch.qos.logback.classic.sift,ch.qos.logback.classic.layout,ch.qos.logback.classic.joran,ch.qos.logback.classic.joran.action,ch.qos.logback.classic.selector.servlet,ch.qos.logback.classic.servlet,ch.qos.logback.classic.encoder,ch.qos.logback.classic.util,ch.qos.logback.classic.pattern,ch.qos.logback.classic.turbo,ch.qos.logback.classic.selector,ch.qos.logback.classic.helpers,ch.qos.logback.classic.boolex,ch.qos.logback.classic.filter,ch.qos.logback.classic.pattern.color,ch.qos.logback.classic.log4j,ch.qos.logback.classic,ch.qos.logback.classic.net.server,ch.qos.logback.classic.model
+ch.qos.logback.core:ch.qos.logback.core.html,ch.qos.logback.core.joran.sanity,ch.qos.logback.core.joran.action,ch.qos.logback.core.spi,ch.qos.logback.core.joran.util.beans,ch.qos.logback.core.testUtil,ch.qos.logback.core.status,ch.qos.logback.core.recovery,ch.qos.logback.core.pattern.parser,ch.qos.logback.core.encoder,ch.qos.logback.core.joran.util,ch.qos.logback.core.rolling,ch.qos.logback.core.sift,ch.qos.logback.core.model.conditional,ch.qos.logback.core.layout,ch.qos.logback.core.model,ch.qos.logback.core.rolling.helper,ch.qos.logback.core.model.processor,ch.qos.logback.core.net.server,ch.qos.logback.core.net,ch.qos.logback.core.model.processor.conditional,ch.qos.logback.core.read,ch.qos.logback.core.pattern,ch.qos.logback.core.net.ssl,ch.qos.logback.core,ch.qos.logback.core.filter,ch.qos.logback.core.joran,ch.qos.logback.core.joran.conditional,ch.qos.logback.core.joran.spi,ch.qos.logback.core.model.util,ch.qos.logback.core.joran.event,ch.qos.logback.core.boolex,ch.qos.logback.core.hook,ch.qos.logback.core.helpers,ch.qos.logback.core.pattern.color,ch.qos.logback.core.util
+com.fasterxml.jackson.datatype.jsr310:com.fasterxml.jackson.datatype.jsr310.deser.key,com.fasterxml.jackson.datatype.jsr310.deser,com.fasterxml.jackson.datatype.jsr310.ser.key,com.fasterxml.jackson.datatype.jsr310.ser,com.fasterxml.jackson.datatype.jsr310
+org.apache.lucene.core:org.apache.lucene.search,org.apache.lucene.util.hppc,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.internal.tests,org.apache.lucene.codecs.lucene94,org.apache.lucene.util.bkd,org.apache.lucene.util.packed,org.apache.lucene.util.fst,org.apache.lucene.codecs.lucene90,org.apache.lucene.codecs,org.apache.lucene.codecs.compressing,org.apache.lucene.search.similarities,org.apache.lucene.index,org.apache.lucene.util.graph,org.apache.lucene.util.automaton,org.apache.lucene.analysis.standard,org.apache.lucene.search.comparators,org.apache.lucene.util.compress,org.apache.lucene.analysis,org.apache.lucene.util.hnsw,org.apache.lucene.codecs.lucene90.compressing,org.apache.lucene.codecs.lucene99,org.apache.lucene.codecs.perfield,org.apache.lucene.codecs.lucene95,org.apache.lucene.util,org.apache.lucene.util.mutable,org.apache.lucene.codecs.lucene90.blocktree,org.apache.lucene.geo,org.apache.lucene.store,org.apache.lucene.document
+org.apache.lucene.queryparser:org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.queryparser.complexPhrase,org.apache.lucene.queryparser.flexible.standard.builders,org.apache.lucene.queryparser.ext,org.apache.lucene.queryparser.surround.query,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.precedence,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.queryparser.flexible.standard.nodes,org.apache.lucene.queryparser.flexible.standard.nodes.intervalfn,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.surround.parser,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.queryparser.xml.builders,org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.precedence.processors,org.apache.lucene.queryparser.simple,org.apache.lucene.queryparser.classic,org.apache.lucene.queryparser.xml,org.apache.lucene.queryparser.flexible.standard.parser,org.apache.lucene.queryparser.flexible.standard.processors,org.apache.lucene.queryparser.charstream
+org.apache.lucene.sandbox:org.apache.lucene.sandbox.queries,org.apache.lucene.sandbox.codecs.idversion,org.apache.lucene.payloads,org.apache.lucene.sandbox.search,org.apache.lucene.sandbox.index,org.apache.lucene.sandbox.document
+org.apache.lucene.queries:org.apache.lucene.queries.function.docvalues,org.apache.lucene.queries.spans,org.apache.lucene.queries.function.valuesource,org.apache.lucene.queries.mlt,org.apache.lucene.queries.intervals,org.apache.lucene.queries,org.apache.lucene.queries.function,org.apache.lucene.queries.payloads
+org.apache.lucene.highlighter:org.apache.lucene.search.vectorhighlight,org.apache.lucene.search.highlight,org.apache.lucene.search.matchhighlight,org.apache.lucene.search.uhighlight
+org.apache.lucene.memory:org.apache.lucene.index.memory
+jakarta.validation:jakarta.validation.bootstrap,jakarta.validation,jakarta.validation.executable,jakarta.validation.constraints,jakarta.validation.valueextraction,jakarta.validation.spi,jakarta.validation.metadata,jakarta.validation.groups,jakarta.validation.constraintvalidation
+javafx.fxml:javafx.fxml
+javafx.web:javafx.scene.web,com.sun.javafx.fxml.builder.web
+javafx.media:com.sun.javafx.media,com.sun.media.jfxmedia,com.sun.media.jfxmedia.locator,com.sun.media.jfxmedia.events,com.sun.media.jfxmedia.track,javafx.scene.media,com.sun.media.jfxmedia.control
+java.base:javax.security.auth.spi,sun.util.locale.provider,jdk.internal.classfile,sun.security.x509,sun.security.jca,java.lang.constant,sun.net.util,sun.nio.ch,javax.security.auth.login,jdk.internal.classfile.instruction,sun.security.tools,java.lang.annotation,java.security,jdk.internal.classfile.constantpool,java.lang.reflect,sun.security.action,jdk.internal.perf,sun.security.provider.certpath,java.lang.module,java.util.concurrent.locks,java.net.spi,java.io,sun.reflect.misc,java.time.format,jdk.internal.classfile.attribute,java.security.spec,jdk.internal.misc,jdk.internal.org.xml.sax,jdk.internal.logger,jdk.internal.util,javax.crypto.interfaces,java.lang.foreign,jdk.internal.org.xml.sax.helpers,jdk.internal.jimage.decompressor,jdk.internal.org.objectweb.asm.tree,javax.security.auth.callback,jdk.internal.util.random,jdk.internal.foreign,sun.security.util.math,java.net,sun.nio.fs,java.math,java.util.regex,sun.security.util.math.intpoly,sun.security.internal.interfaces,java.util,javax.net,sun.security.pkcs,java.nio.file.spi,sun.security.provider,javax.net.ssl,sun.net.dns,jdk.internal.io,java.time,jdk.internal.ref,sun.security.rsa,jdk.internal.vm.vector,java.security.cert,com.sun.security.ntlm,java.time.zone,java.nio,jdk.internal.access,java.lang.invoke,java.lang.runtime,java.nio.file.attribute,jdk.internal.org.objectweb.asm.util,java.time.chrono,java.nio.channels,java.nio.charset.spi,jdk.internal.javac,sun.reflect.generics.reflectiveObjects,jdk.internal.vm.annotation,jdk.internal.reflect,java.nio.channels.spi,sun.invoke.util,java.util.stream,java.util.random,sun.nio.cs,jdk.internal.loader,jdk.internal.util.xml.impl,sun.net.www,javax.crypto.spec,jdk.internal.org.objectweb.asm,sun.security.util,java.util.zip,java.text,java.util.spi,sun.net.ext,javax.security.auth.x500,java.nio.file,java.lang,javax.security.cert,jdk.internal.jimage,java.util.function,jdk.internal.module,sun.security.timestamp,jdk.internal.util.xml,sun.net,javax.crypto,jdk.internal.jmod,javax.security.auth,jdk.internal.vm,java.util.jar,jdk.internal.org.objectweb.asm.commons,sun.reflect.annotation,java.util.concurrent,java.lang.ref,java.util.concurrent.atomic,sun.security.validator,com.sun.crypto.provider,java.nio.charset,sun.net.www.protocol.http,java.text.spi,sun.util.cldr,sun.security.internal.spec,sun.util.resources,java.time.temporal,jdk.internal.platform,java.security.interfaces,jdk.internal.event,sun.util.logging
+java.compiler:javax.lang.model,javax.annotation.processing,javax.lang.model.type,javax.lang.model.util,javax.lang.model.element,javax.tools
+java.datatransfer:sun.datatransfer,java.awt.datatransfer
+java.desktop:javax.swing.text.rtf,java.awt.font,javax.swing.text.html.parser,java.beans,javax.swing.plaf.synth,java.awt.desktop,javax.swing.event,javax.imageio.stream,java.awt,java.beans.beancontext,javax.swing.plaf.metal,javax.print.event,java.awt.im,javax.swing.plaf.multi,java.awt.image.renderable,javax.swing,javax.swing.colorchooser,javax.print.attribute.standard,javax.swing.table,javax.sound.midi.spi,javax.imageio.metadata,java.awt.image,java.awt.print,javax.imageio.plugins.tiff,javax.swing.tree,sun.awt,javax.imageio.plugins.jpeg,javax.swing.text.html,java.awt.geom,sun.awt.dnd,javax.imageio.plugins.bmp,javax.swing.border,javax.imageio.spi,javax.sound.sampled.spi,java.awt.color,javax.accessibility,java.awt.event,javax.swing.plaf.nimbus,sun.swing,java.awt.dnd.peer,javax.print,javax.swing.filechooser,javax.print.attribute,javax.swing.plaf,javax.sound.sampled,javax.swing.undo,javax.imageio.event,javax.swing.plaf.basic,javax.swing.text,java.awt.dnd,javax.sound.midi,java.applet,javax.imageio,java.awt.im.spi
+java.instrument:java.lang.instrument,sun.instrument
+java.logging:java.util.logging
+java.management:com.sun.jmx.remote.security,sun.management.counter,com.sun.jmx.remote.internal,javax.management,javax.management.relation,sun.management.spi,javax.management.modelmbean,javax.management.monitor,javax.management.remote,sun.management,java.lang.management,javax.management.openmbean,sun.management.counter.perf,javax.management.loading,com.sun.jmx.remote.util,javax.management.timer
+java.management.rmi:javax.management.remote.rmi,com.sun.jmx.remote.internal.rmi,com.sun.jmx.remote.protocol.rmi
+java.naming:com.sun.jndi.toolkit.url,javax.naming.event,javax.naming.spi,javax.naming,javax.naming.ldap,javax.naming.ldap.spi,com.sun.jndi.toolkit.ctx,javax.naming.directory,com.sun.naming.internal
+java.net.http:java.net.http
+java.prefs:java.util.prefs
+java.rmi:java.rmi.server,java.rmi,sun.rmi.server,javax.rmi.ssl,java.rmi.dgc,sun.rmi.transport,sun.rmi.registry,java.rmi.registry
+java.scripting:javax.script
+java.security.jgss:sun.security.krb5.internal,javax.security.auth.kerberos,sun.security.krb5.internal.ktab,sun.security.krb5,sun.security.jgss.krb5,sun.security.jgss,sun.security.jgss.krb5.internal,org.ietf.jgss
+java.security.sasl:com.sun.security.sasl.util,javax.security.sasl
+java.smartcardio:javax.smartcardio
+java.sql:java.sql,javax.sql
+java.sql.rowset:javax.sql.rowset.serial,javax.sql.rowset,javax.sql.rowset.spi
+java.transaction.xa:javax.transaction.xa
+java.xml.crypto:javax.xml.crypto.dsig.spec,javax.xml.crypto.dsig,javax.xml.crypto,javax.xml.crypto.dom,javax.xml.crypto.dsig.dom,javax.xml.crypto.dsig.keyinfo
+java.xml:com.sun.org.apache.xpath.internal.objects,javax.xml.catalog,javax.xml.datatype,com.sun.org.apache.xml.internal.dtm,javax.xml.transform.sax,org.xml.sax.ext,javax.xml,com.sun.org.apache.xpath.internal.res,javax.xml.parsers,javax.xml.validation,javax.xml.transform.dom,org.w3c.dom,org.w3c.dom.bootstrap,org.w3c.dom.views,javax.xml.transform.stream,org.xml.sax.helpers,javax.xml.transform.stax,javax.xml.namespace,com.sun.org.apache.xpath.internal,org.w3c.dom.ls,com.sun.org.apache.xpath.internal.compiler,com.sun.org.apache.xml.internal.utils,javax.xml.stream.util,org.w3c.dom.ranges,org.w3c.dom.events,javax.xml.xpath,com.sun.org.apache.xpath.internal.functions,javax.xml.transform,org.xml.sax,javax.xml.stream,javax.xml.stream.events,org.w3c.dom.traversal
+jdk.accessibility:com.sun.java.accessibility.util
+jdk.attach:com.sun.tools.attach,sun.tools.attach,com.sun.tools.attach.spi
+jdk.compiler:com.sun.source.doctree,com.sun.tools.javac,com.sun.tools.javac.main,com.sun.source.util,com.sun.tools.javac.jvm,com.sun.tools.javac.api,com.sun.source.tree,com.sun.tools.javac.parser,com.sun.tools.javac.model,com.sun.tools.javac.code,com.sun.tools.javac.platform,com.sun.tools.javac.resources,com.sun.tools.doclint,com.sun.tools.javac.util,com.sun.tools.javac.comp,com.sun.tools.javac.file,com.sun.tools.javac.tree,jdk.internal.shellsupport.doc
+jdk.dynalink:jdk.dynalink.beans,jdk.dynalink.linker,jdk.dynalink,jdk.dynalink.support,jdk.dynalink.linker.support
+jdk.hotspot.agent:sun.jvm.hotspot.debugger.remote
+jdk.httpserver:com.sun.net.httpserver,com.sun.net.httpserver.spi
+jdk.incubator.vector:jdk.incubator.vector
+jdk.internal.ed:jdk.internal.editor.spi,jdk.internal.editor.external
+jdk.internal.jvmstat:sun.jvmstat.monitor.event,sun.jvmstat.monitor,sun.jvmstat.perfdata.monitor
+jdk.internal.le:jdk.internal.org.jline.terminal.spi,jdk.internal.org.jline.reader.impl,jdk.internal.org.jline.reader.impl.completer,jdk.internal.org.jline.utils,jdk.internal.org.jline.reader.impl.history,jdk.internal.org.jline.terminal,jdk.internal.org.jline.reader,jdk.internal.org.jline.keymap,jdk.internal.org.jline.terminal.impl
+jdk.internal.opt:jdk.internal.opt,jdk.internal.joptsimple
+jdk.internal.vm.ci:jdk.vm.ci.hotspot,jdk.vm.ci.meta,jdk.vm.ci.runtime,jdk.vm.ci.services,jdk.vm.ci.code
+jdk.jartool:jdk.security.jarsigner
+jdk.javadoc:jdk.javadoc.doclet
+jdk.jconsole:com.sun.tools.jconsole
+jdk.jdeps:com.sun.tools.classfile
+jdk.jdi:com.sun.jdi.connect,com.sun.jdi.request,com.sun.jdi,com.sun.jdi.connect.spi,com.sun.jdi.event
+jdk.jfr:jdk.jfr,jdk.jfr.consumer,jdk.jfr.internal.management
+jdk.jshell:jdk.jshell,jdk.jshell.spi,jdk.jshell.execution,jdk.jshell.tool
+jdk.jsobject:netscape.javascript
+jdk.jstatd:sun.jvmstat.monitor.remote
+jdk.management.agent:jdk.internal.agent
+jdk.management.jfr:jdk.management.jfr
+jdk.management:com.sun.management
+jdk.naming.dns:com.sun.jndi.url.dns
+jdk.naming.rmi:com.sun.jndi.url.rmi,com.sun.jndi.rmi.registry
+jdk.net:jdk.net,jdk.nio
+jdk.nio.mapmode:jdk.nio.mapmode
+jdk.random:jdk.random
+jdk.sctp:com.sun.nio.sctp
+jdk.security.auth:com.sun.security.auth.callback,com.sun.security.auth,com.sun.security.auth.login,com.sun.security.auth.module
+jdk.security.jgss:com.sun.security.jgss
+jdk.unsupported.desktop:jdk.swing.interop
+jdk.unsupported:com.sun.nio.file,sun.misc,sun.reflect
+jdk.xml.dom:org.w3c.dom.css,org.w3c.dom.stylesheets,org.w3c.dom.html,org.w3c.dom.xpath
+
+Cannot find module exporting com.fasterxml.jackson.dataformat.xml (used by the merged module)
+Cannot find module exporting com.fasterxml.jackson.dataformat.xml.ser (used by the merged module)
+Cannot find module exporting com.google.j2objc.annotations (used by the merged module)
+Cannot find module exporting com.thoughtworks.paranamer (used by the merged module)
+Cannot find module exporting jakarta.enterprise.context (used by the merged module)
+Cannot find module exporting jakarta.enterprise.context.spi (used by the merged module)
+Cannot find module exporting jakarta.enterprise.inject (used by the merged module)
+Cannot find module exporting jakarta.enterprise.inject.spi (used by the merged module)
+Cannot find module exporting jakarta.enterprise.util (used by the merged module)
+Cannot find module exporting jakarta.json.bind (used by the merged module)
+Cannot find module exporting jakarta.servlet (used by the merged module)
+Cannot find module exporting jakarta.servlet.http (used by the merged module)
+Cannot find module exporting javax.money (used by the merged module)
+Cannot find module exporting javax.servlet (used by the merged module)
+Cannot find module exporting javax.servlet.http (used by the merged module)
+Cannot find module exporting kotlin (used by the merged module)
+Cannot find module exporting kotlin.jvm.internal (used by the merged module)
+Cannot find module exporting oracle.jdbc (used by the merged module)
+Cannot find module exporting oracle.sql (used by the merged module)
+Cannot find module exporting org.apache.avalon.framework.logger (used by the merged module)
+Cannot find module exporting org.apache.commons.text (used by the merged module)
+Cannot find module exporting org.apache.log (used by the merged module)
+Cannot find module exporting org.apache.log4j (used by the merged module)
+Cannot find module exporting org.apache.logging.log4j (used by the merged module)
+Cannot find module exporting org.apache.tools.ant (used by the merged module)
+Cannot find module exporting org.apache.tools.ant.types (used by the merged module)
+Cannot find module exporting org.bouncycastle.crypto (used by the merged module)
+Cannot find module exporting org.bouncycastle.crypto.engines (used by the merged module)
+Cannot find module exporting org.bouncycastle.crypto.generators (used by the merged module)
+Cannot find module exporting org.bouncycastle.crypto.modes (used by the merged module)
+Cannot find module exporting org.bouncycastle.crypto.paddings (used by the merged module)
+Cannot find module exporting org.bouncycastle.crypto.params (used by the merged module)
+Cannot find module exporting org.bouncycastle.util (used by the merged module)
+Cannot find module exporting org.jboss.logging.annotations (used by the merged module)
+Cannot find module exporting org.jboss.vfs (used by the merged module)
+Cannot find module exporting org.jetbrains.annotations (used by the merged module)
+Cannot find module exporting org.joda.time (used by the merged module)
+Cannot find module exporting org.locationtech.jts.geom (used by the merged module)
+Cannot find module exporting org.locationtech.jts.geom.impl (used by the merged module)
+Cannot find module exporting org.osgi.framework (used by the merged module)
+Cannot find module exporting org.osgi.service.jdbc (used by the merged module)
+Cannot find module exporting org.postgresql.util (used by the merged module)
+Cannot find module exporting software.amazon.awssdk.awscore.exception (used by the merged module)
+Cannot find module exporting software.amazon.awssdk.core (used by the merged module)
+Cannot find module exporting software.amazon.awssdk.core.exception (used by the merged module)
+Cannot find module exporting software.amazon.awssdk.services.s3 (used by the merged module)
+Cannot find module exporting software.amazon.awssdk.services.s3.model (used by the merged module)
+found ServiceLoader.load() in org/hibernate/boot/registry/classloading/internal/AggregatedServiceLoader$ClassPathAndModulePathAggregatedServiceLoader.<init>()
+Cannot derive uses clause from service loader invocation in: org/hibernate/boot/registry/classloading/internal/AggregatedServiceLoader$ClassPathAndModulePathAggregatedServiceLoader.<init>(). If you get an error at runtime, please add the `uses` clause to the `mergedModule` block for the class that is being referenced by this method.
+found ServiceLoader.load() in org/hibernate/boot/registry/classloading/internal/AggregatedServiceLoader$ClassPathAndModulePathAggregatedServiceLoader.<init>()
+found ServiceLoader.load() in org/hibernate/query/sqm/internal/SqmCriteriaNodeBuilder.<init>()
+found ServiceLoader.load() in org/hibernate/validator/internal/util/privilegedactions/GetInstancesFromServiceLoader.loadInstances()
+Cannot derive uses clause from service loader invocation in: org/hibernate/validator/internal/util/privilegedactions/GetInstancesFromServiceLoader.loadInstances(). If you get an error at runtime, please add the `uses` clause to the `mergedModule` block for the class that is being referenced by this method.
+found ServiceLoader.load() in org/flywaydb/core/internal/plugin/PluginRegister.registerPlugins()
+found ServiceLoader.load() in org/flywaydb/core/internal/util/ClassUtils.isImplementationPresent()
+Cannot derive uses clause from service loader invocation in: org/flywaydb/core/internal/util/ClassUtils.isImplementationPresent(). If you get an error at runtime, please add the `uses` clause to the `mergedModule` block for the class that is being referenced by this method.
+found ServiceLoader.load() in org/flywaydb/core/internal/util/FeatureDetector.isSlf4jAvailable()
+found ServiceLoader.load() in jakarta/el/FactoryFinder.find()
+Cannot derive uses clause from service loader invocation in: jakarta/el/FactoryFinder.find(). If you get an error at runtime, please add the `uses` clause to the `mergedModule` block for the class that is being referenced by this method.
+Compiling module-info from A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module into A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpmodinfo...
+Starting process 'command 'C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/javac''. Working directory: A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java Command: C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/javac --module-version 1.0.0 -p A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\mergedjars;A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase/jlinkjars -d A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpmodinfo A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module/module-info.java
+Successfully started process 'command 'C:\Users\munta\scoop\apps\temurin21-jdk\current/bin/javac''
+A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module\module-info.java:782: error: module not found: org.apache.lucene.queryparser
+    requires org.apache.lucene.queryparser;
+                              ^
+A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module\module-info.java:785: error: module not found: org.slf4j
+    requires org.slf4j;
+                ^
+A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module\module-info.java:786: error: module not found: javafx.base
+    requires javafx.base;
+                   ^
+A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module\module-info.java:797: error: module not found: javafx.graphics
+    requires javafx.graphics;
+                   ^
+A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\jlinkbase\tmpjars\com.roam.merged.module\module-info.java:806: error: module not found: javafx.controls
+    requires javafx.controls;
+                   ^
+error: module not found: jakarta.cdi
+6 errors
+
+> Task :createMergedModule FAILED
+
+[Incubating] Problems report is available at: file:///A:/Roam_Drive01/Assets/Operational%20Assets/Noor/roam-java/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':createMergedModule'.
+> Unable to compile merged module-info. Tip: If there is a module not found error, try using `addExtraDependencies` in the `jlink {...}` block for the missing module.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 6s
+6 actionable tasks: 6 executed
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
+Watched directory hierarchies: []

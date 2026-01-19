@@ -1,0 +1,207 @@
+/* Custom Title Bar Styling */
+
+.custom-title-bar {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 12 12 0 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 12 12 0 0;
+}
+
+.title-bar-title {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 13px;
+}
+
+/* Window control buttons - Borderless transparent style */
+.title-bar-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+}
+
+.title-bar-button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.06);
+}
+
+.title-bar-button:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title-bar-button.close-button:hover {
+    -fx-background-color: #e81123;
+}
+
+.title-bar-button.close-button:hover .title-bar-icon {
+    -fx-icon-color: #ffffff;
+}
+
+.title-bar-icon {
+    -fx-icon-color: -roam-text-secondary;
+}
+
+.title-bar-button:hover .title-bar-icon {
+    -fx-icon-color: -roam-text-primary;
+}
+
+/* Settings action button - Simple transparent style */
+.title-bar-action-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+    -fx-padding: 4;
+}
+
+.title-bar-action-button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.06);
+}
+
+.title-bar-action-button:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title-bar-action-icon {
+    -fx-icon-color: -roam-text-secondary;
+}
+
+.title-bar-action-button:hover .title-bar-action-icon {
+    -fx-icon-color: -roam-text-primary;
+}
+
+/* Separator between action buttons and window controls */
+.title-bar-separator {
+    -fx-background-color: -roam-border;
+    -fx-pref-width: 1;
+    -fx-max-width: 1;
+}
+
+/* ============================================
+   DIALOG TITLE BAR
+   ============================================ */
+
+.dialog-title-bar {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 8 8 0 0;
+    -fx-border-color: -roam-border;
+    -fx-border-width: 0 0 1 0;
+}
+
+.dialog-title-text {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 14px;
+}
+
+.dialog-close-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.dialog-close-button:hover {
+    -fx-background-color: #e81123;
+}
+
+.dialog-close-icon {
+    -fx-icon-color: -roam-text-secondary;
+}
+
+.dialog-close-button:hover .dialog-close-icon {
+    -fx-icon-color: #ffffff;
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+
+.dark .custom-title-bar {
+    -fx-background-color: #121212;
+    -fx-background-radius: 12 12 0 0;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12 12 0 0;
+}
+
+.dark .title-bar-title {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .title-bar-icon {
+    -fx-icon-color: #9CA3AF;
+}
+
+.dark .title-bar-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.dark .title-bar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .title-bar-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark .title-bar-button:hover .title-bar-icon {
+    -fx-icon-color: #ffffff;
+}
+
+.dark .title-bar-button.close-button:hover {
+    -fx-background-color: #e81123;
+}
+
+.dark .title-bar-button.close-button:hover .title-bar-icon {
+    -fx-icon-color: #ffffff;
+}
+
+/* Dark mode action buttons */
+.dark .title-bar-action-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.dark .title-bar-action-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .title-bar-action-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark .title-bar-action-icon {
+    -fx-icon-color: #9CA3AF;
+}
+
+.dark .title-bar-action-button:hover .title-bar-action-icon {
+    -fx-icon-color: #ffffff;
+}
+
+.dark .title-bar-separator {
+    -fx-background-color: #333333;
+}
+
+/* Dark mode dialog title bar */
+.dark .dialog-title-bar {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #333333;
+}
+
+.dark .dialog-title-text {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .dialog-close-icon {
+    -fx-icon-color: #b0b0b0;
+}

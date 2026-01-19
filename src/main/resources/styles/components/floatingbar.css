@@ -1,0 +1,176 @@
+/* Floating Navigation Bar Styling - Notion Style */
+
+.floating-nav-bar {
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-border-width: 1;
+}
+
+/* Light theme - default */
+.floating-nav-bar-light {
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(0, 0, 0, 0.06);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 12, 0, 0, 4);
+}
+
+/* Dark theme - Enhanced for better visibility and contrast */
+.floating-nav-bar-dark {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 20, 0, 0, 6),
+                dropshadow(gaussian, rgba(138, 180, 248, 0.03), 40, 0, 0, 0);
+}
+
+.floating-nav-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 999;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+}
+
+/* Light mode button states */
+.floating-nav-bar-light .floating-nav-button:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+.floating-nav-bar-light .floating-nav-button:pressed {
+    -fx-background-color: #e5e7eb;
+}
+
+.floating-nav-bar-light .floating-nav-button.selected {
+    -fx-background-color: -roam-blue-light;
+}
+
+.floating-nav-bar-light .floating-nav-button.selected:hover {
+    -fx-background-color: derive(-roam-blue-light, -5%);
+}
+
+.floating-nav-bar-light .floating-nav-icon {
+    -fx-icon-color: #6b7280;
+}
+
+.floating-nav-bar-light .floating-nav-button:hover .floating-nav-icon {
+    -fx-icon-color: #374151;
+}
+
+.floating-nav-bar-light .floating-nav-button.selected .floating-nav-icon {
+    -fx-icon-color: -roam-blue;
+}
+
+.floating-nav-bar-light .floating-nav-divider {
+    -fx-background-color: #e4e4e7;
+    -fx-background-radius: 1;
+}
+
+/* Dark mode button states - Enhanced contrast and visibility */
+.floating-nav-bar-dark .floating-nav-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+.floating-nav-bar-dark .floating-nav-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+}
+
+.floating-nav-bar-dark .floating-nav-button.selected {
+    -fx-background-color: rgba(138, 180, 248, 0.15);
+    -fx-border-color: rgba(138, 180, 248, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+}
+
+.floating-nav-bar-dark .floating-nav-button.selected:hover {
+    -fx-background-color: rgba(138, 180, 248, 0.22);
+    -fx-border-color: rgba(138, 180, 248, 0.4);
+}
+
+.floating-nav-bar-dark .floating-nav-button.selected:pressed {
+    -fx-background-color: rgba(138, 180, 248, 0.28);
+}
+
+/* Dark mode icon colors - Improved visibility */
+.floating-nav-bar-dark .floating-nav-icon {
+    -fx-icon-color: #9ca3af;
+}
+
+.floating-nav-bar-dark .floating-nav-button:hover .floating-nav-icon {
+    -fx-icon-color: #e5e7eb;
+}
+
+.floating-nav-bar-dark .floating-nav-button.selected .floating-nav-icon {
+    -fx-icon-color: #8ab4f8;
+}
+
+.floating-nav-bar-dark .floating-nav-button.selected:hover .floating-nav-icon {
+    -fx-icon-color: #aecbfa;
+}
+
+/* Dark mode divider - More visible */
+.floating-nav-bar-dark .floating-nav-divider {
+    -fx-background-color: #3d3d3d;
+    -fx-background-radius: 1;
+}
+
+/* Search field - Light mode */
+.floating-nav-bar-light .floating-search-field {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 999;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 999;
+    -fx-padding: 6 14;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 13px;
+    -fx-text-fill: #374151;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+.floating-nav-bar-light .floating-search-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 999;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.15), 6, 0, 0, 0);
+}
+
+/* Search field - Dark mode - Enhanced contrast and visibility */
+.floating-nav-bar-dark .floating-search-field {
+    -fx-background-color: #252525;
+    -fx-background-radius: 999;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-padding: 6 14;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 13px;
+    -fx-text-fill: #e5e7eb;
+    -fx-prompt-text-fill: #6b7280;
+}
+
+.floating-nav-bar-dark .floating-search-field:hover {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #525252;
+}
+
+.floating-nav-bar-dark .floating-search-field:focused {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #8ab4f8;
+    -fx-effect: dropshadow(gaussian, rgba(138, 180, 248, 0.15), 6, 0, 0, 0);
+}
+
+/* Search button in dark mode */
+.floating-nav-bar-dark .floating-search-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Tooltip styling for dark mode */
+.floating-nav-bar-dark .tooltip {
+    -fx-background-color: #252525;
+    -fx-text-fill: #e5e7eb;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 2);
+}

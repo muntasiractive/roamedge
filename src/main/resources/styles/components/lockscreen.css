@@ -1,0 +1,95 @@
+/* Lock Screen Styling */
+
+/* Lock screen container */
+.lock-screen-container {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0, 0, 4);
+}
+
+.lock-screen-container.maximized {
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+.dark .lock-screen-container {
+    -fx-background-color: #121212;
+}
+
+/* Lock screen scroll pane */
+.lock-screen-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-background-radius: 0 0 12 12;
+}
+
+.lock-screen-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Lock screen content area */
+.lock-screen-content {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 0 0 12 12;
+}
+
+.dark .lock-screen-content {
+    -fx-background-color: #121212;
+}
+
+/* Keypad button */
+.keypad-button {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-size: 20px;
+    -fx-min-width: 64px;
+    -fx-min-height: 64px;
+    -fx-max-width: 64px;
+    -fx-max-height: 64px;
+    -fx-background-radius: 50%;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 4, 0, 0, 2);
+}
+
+.keypad-button:hover {
+    -fx-background-color: -roam-gray-light;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0, 0, 3);
+}
+
+.keypad-button:pressed {
+    -fx-background-color: -roam-border;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+/* Dark mode keypad */
+.dark .keypad-button {
+    -fx-background-color: #2D2D2D;
+}
+
+.dark .keypad-button:hover {
+    -fx-background-color: #3D3D3D;
+}
+
+.dark .keypad-button:pressed {
+    -fx-background-color: #424242;
+}
+
+.pin-dot {
+    -fx-fill: -roam-border;
+    -fx-stroke: transparent;
+}
+
+.pin-dot-filled {
+    -fx-fill: -roam-blue;
+}
+
+/* Dark mode support */
+.dark .pin-dot {
+    -fx-fill: #424242;
+}
+
+.dark .pin-dot-filled {
+    -fx-fill: #8ab4f8;
+}

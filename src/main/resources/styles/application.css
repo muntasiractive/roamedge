@@ -1,0 +1,983 @@
+/* ============================================
+   ROAM APPLICATION - COMPREHENSIVE DESIGN SYSTEM
+   ============================================ */
+
+/* 1. Utilities & Base */
+@import "utilities/variables.css";
+@import "utilities/typography.css";
+
+/* 2. Layout Structure */
+@import "layouts/structure.css";
+
+/* 3. Components */
+@import "components/buttons.css";
+@import "components/inputs.css";
+@import "components/cards.css";
+@import "components/tables.css";
+@import "components/badges.css";
+@import "components/empty.css";
+@import "components/lockscreen.css";
+@import "components/wiki.css";
+@import "components/titlebar.css";
+@import "components/floatingbar.css";
+@import "components/search.css";
+@import "components/assets.css";
+@import "components/dashboard.css";
+@import "components/pagination.css";
+
+/* 4. Global/Root Property Assignments 
+   (Variables are defined in variables.css, here we apply them to the root node) 
+*/
+.root {
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+    
+    /* Apply background and text colors using our variables */
+    -fx-base: -roam-bg-primary;
+    -fx-background-color: -roam-bg-primary;
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Ensure dark mode root properties are applied if needed, 
+   though variables.css handles the variable switching. */
+.root.dark {
+    -fx-base: -roam-bg-primary; /* Will resolve to dark color */
+    -fx-background-color: -roam-bg-primary;
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Global Text Styling */
+.label, .text {
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* ============================================
+   THEME-AWARE UTILITY CLASSES
+   ============================================ */
+
+/* Search Result Items */
+.search-result-item {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 12;
+}
+
+.search-result-item:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+/* Type Badges */
+.type-badge {
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-size: 10px;
+    -fx-padding: 2 8 2 8;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+}
+
+.type-badge-operation {
+    -fx-background-color: -roam-blue;
+}
+
+.type-badge-task {
+    -fx-background-color: -roam-green;
+}
+
+.type-badge-wiki {
+    -fx-background-color: -roam-red;
+}
+
+.type-badge-journal {
+    -fx-background-color: -roam-orange;
+}
+
+.type-badge-event {
+    -fx-background-color: -roam-purple;
+}
+
+/* Status Badges - Theme Aware */
+.status-badge {
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 11px;
+    -fx-padding: 4 10;
+    -fx-background-radius: 12;
+}
+
+.status-badge-todo {
+    -fx-background-color: -roam-orange-bg;
+    -fx-text-fill: -roam-orange;
+}
+
+.status-badge-in-progress {
+    -fx-background-color: -roam-blue-tag-bg;
+    -fx-text-fill: -roam-blue-tag;
+}
+
+.status-badge-done {
+    -fx-background-color: -roam-green-bg;
+    -fx-text-fill: -roam-green;
+}
+
+/* Priority Badges - Theme Aware */
+.priority-badge {
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 11px;
+    -fx-padding: 4 10;
+    -fx-background-radius: 12;
+}
+
+.priority-badge-high {
+    -fx-background-color: -roam-red-bg;
+    -fx-text-fill: -roam-red;
+}
+
+.priority-badge-medium {
+    -fx-background-color: -roam-yellow-bg;
+    -fx-text-fill: -roam-yellow;
+}
+
+.priority-badge-low {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-secondary;
+}
+
+/* Delete Button Styling */
+.delete-button {
+    -fx-background-color: -roam-red-bg;
+    -fx-text-fill: -roam-red;
+    -fx-cursor: hand;
+    -fx-background-radius: 4;
+    -fx-padding: 4 8;
+}
+
+.delete-button:hover {
+    -fx-background-color: -roam-red;
+    -fx-text-fill: white;
+}
+
+/* Dialog Styling */
+.dialog-pane {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+}
+
+.dialog-pane .content {
+    -fx-background-color: -roam-bg-primary;
+    -fx-text-fill: -roam-text-primary;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 16 16 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 16px;
+}
+
+.dialog-pane > .content.label {
+    -fx-text-fill: -roam-text-primary;
+}
+
+.dialog-pane > .button-bar > .container {
+    -fx-background-color: -roam-bg-primary;
+    -fx-padding: 16;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Dialog Button Styling - Pill Style */
+.dialog-pane .button {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 14px;
+    -fx-padding: 0.6em 1.5em;
+    -fx-background-radius: 10em; /* Pill shape */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0, 1, 2);
+    -fx-min-width: 90;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: -roam-gray-light;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 2, 3);
+}
+
+.dialog-pane .button:pressed {
+    -fx-background-color: -roam-border;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 2, 0, 0, 1);
+}
+
+/* Default/OK button - Primary style */
+.dialog-pane .button.button-bar-button-type-finish,
+.dialog-pane .button-bar .container .button:last-child {
+    -fx-background-color: -roam-blue;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(66,133,244,0.35), 8, 0, 2, 3);
+}
+
+.dialog-pane .button.button-bar-button-type-finish:hover,
+.dialog-pane .button-bar .container .button:last-child:hover {
+    -fx-background-color: -roam-blue-hover;
+    -fx-effect: dropshadow(gaussian, rgba(66,133,244,0.5), 10, 0, 3, 5);
+}
+
+/* Cancel button - stays secondary */
+.dialog-pane .button.button-bar-button-type-cancel {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Dark mode dialog text overrides - use dialog-pane.dark directly since dialogs have separate scene */
+.dialog-pane.dark {
+    -fx-background-color: #1e1e1e;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+}
+
+.dialog-pane.dark .content {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .header-panel {
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 16 16 0 0;
+}
+
+.dialog-pane.dark .header-panel .label {
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .label {
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark > .content.label {
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark > .button-bar > .container {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 16;
+}
+
+/* Dark mode dialog buttons */
+.dialog-pane.dark .button {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #e8e8e8;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 14px;
+    -fx-padding: 0.6em 1.5em;
+    -fx-background-radius: 10em;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 1, 2);
+    -fx-min-width: 90;
+}
+
+.dialog-pane.dark .button:hover {
+    -fx-background-color: #3d3d3d;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 6, 0, 2, 3);
+}
+
+.dialog-pane.dark .button:pressed {
+    -fx-background-color: #424242;
+}
+
+/* Dark mode primary button */
+.dialog-pane.dark .button.button-bar-button-type-finish,
+.dialog-pane.dark .button-bar .container .button:last-child {
+    -fx-background-color: #8ab4f8;
+    -fx-text-fill: #1e1e1e;
+    -fx-effect: dropshadow(gaussian, rgba(138,180,248,0.35), 8, 0, 2, 3);
+}
+
+.dialog-pane.dark .button.button-bar-button-type-finish:hover,
+.dialog-pane.dark .button-bar .container .button:last-child:hover {
+    -fx-background-color: #aecbfa;
+    -fx-effect: dropshadow(gaussian, rgba(138,180,248,0.5), 10, 0, 3, 5);
+}
+
+.dialog-pane.dark .text-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #424242;
+    -fx-prompt-text-fill: #757575;
+}
+
+.dialog-pane.dark .text-area {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #424242;
+}
+
+.dialog-pane.dark .text-area .content {
+    -fx-background-color: #2d2d2d;
+}
+
+.dialog-pane.dark .combo-box {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #424242;
+}
+
+.dialog-pane.dark .combo-box .list-cell {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .date-picker {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #424242;
+}
+
+.dialog-pane.dark .date-picker .text-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .spinner {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #424242;
+}
+
+.dialog-pane.dark .spinner .text-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .check-box {
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .check-box .box {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #424242;
+}
+
+.dialog-pane.dark .list-view {
+    -fx-background-color: #1e1e1e;
+}
+
+.dialog-pane.dark .list-cell {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+}
+
+.dialog-pane.dark .list-cell:hover {
+    -fx-background-color: #2d2d2d;
+}
+
+.dialog-pane.dark .list-cell:selected {
+    -fx-background-color: #3d3d3d;
+}
+
+.dialog-pane.dark .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.dialog-pane.dark .scroll-pane > .viewport {
+    -fx-background-color: #1e1e1e;
+}
+
+.dialog-pane.dark .button {
+    -fx-text-fill: #ffffff;
+}
+
+/* Also handle parent .dark class for nested scenarios */
+.dark .dialog-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.dark .dialog-pane .content {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+}
+
+.dark .dialog-pane .header-panel {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark .dialog-pane .header-panel .label {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .dialog-pane .label {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .dialog-pane > .content.label {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .dialog-pane > .button-bar > .container {
+    -fx-background-color: #1e1e1e;
+}
+
+.dark .dialog-pane .text-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #424242;
+}
+
+.dark .dialog-pane .text-area {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #424242;
+}
+
+.dark .dialog-pane .text-area .content {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark .dialog-pane .combo-box {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #424242;
+}
+
+.dark .dialog-pane .combo-box .list-cell {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+.dark .dialog-pane .date-picker {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #424242;
+}
+
+.dark .dialog-pane .date-picker .text-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+/* ComboBox Styling - Bento Rounded */
+.combo-box {
+    -fx-background-color: -roam-gray-light;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-min-height: 40;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -roam-text-primary;
+    -fx-padding: 8 12;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -roam-text-primary;
+    -fx-padding: 10 16;
+    -fx-background-radius: 8;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+/* ListView Styling */
+.list-view {
+    -fx-background-color: -roam-bg-primary;
+}
+
+.list-cell {
+    -fx-background-color: -roam-bg-primary;
+    -fx-text-fill: -roam-text-primary;
+}
+
+.list-cell:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.list-cell:selected {
+    -fx-background-color: -roam-row-selected;
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* TabPane Styling */
+.tab-pane {
+    -fx-background-color: -roam-bg-primary;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.tab {
+    -fx-background-color: transparent;
+}
+
+.tab:selected {
+    -fx-background-color: -roam-bg-primary;
+}
+
+.tab .tab-label {
+    -fx-text-fill: -roam-text-secondary;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Context Menu Styling */
+.context-menu {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.menu-item .label {
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-primary;
+    -fx-border-color: -roam-border;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+
+/* Alert/Dialog Styling */
+.alert {
+    -fx-background-color: -roam-bg-primary;
+}
+
+.alert .content {
+    -fx-text-fill: -roam-text-primary;
+}
+
+.alert .dialog-pane {
+    -fx-background-color: -roam-bg-primary;
+}
+
+.alert .dialog-pane .content {
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Dark mode alert styles */
+.dark .alert,
+.alert.dark {
+    -fx-background-color: #1e1e1e;
+}
+
+.dark .alert .content,
+.alert.dark .content {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .alert .dialog-pane,
+.alert.dark .dialog-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.dark .alert .dialog-pane .content,
+.alert.dark .dialog-pane .content {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .alert .dialog-pane .header-panel,
+.alert.dark .dialog-pane .header-panel {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark .alert .dialog-pane .header-panel .label,
+.alert.dark .dialog-pane .header-panel .label {
+    -fx-text-fill: #ffffff;
+}
+
+.dark .alert .dialog-pane .label,
+.alert.dark .dialog-pane .label {
+    -fx-text-fill: #ffffff;
+}
+
+/* CheckBox Styling */
+.check-box {
+    -fx-text-fill: -roam-text-primary;
+}
+
+.check-box .box {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-border;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -roam-blue;
+    -fx-border-color: -roam-blue;
+}
+
+/* Template Success Badge */
+.template-success-badge {
+    -fx-background-color: -roam-green-bg;
+    -fx-text-fill: -roam-green;
+    -fx-background-radius: 12;
+    -fx-padding: 6 12;
+}
+
+/* Kanban Column Header */
+.kanban-column-header {
+    -fx-background-radius: 16 16 0 0;
+    -fx-padding: 16;
+}
+
+/* Task Card - Bento Style */
+.task-card {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-border;
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-cursor: hand;
+    -fx-padding: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 10, 0, 0, 3);
+}
+
+.task-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 16, 0, 0, 5);
+    -fx-border-color: -roam-blue;
+}
+
+/* ============================================
+   SCROLL PANE - CUSTOM MODERN SCROLLBAR
+   ============================================ */
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Vertical Scrollbar - Right Side Custom Style */
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+    -fx-padding: 4 2 4 2;
+}
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 5px;
+    -fx-min-width: 6px;
+    -fx-pref-width: 6px;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+}
+
+.scroll-pane .scroll-bar:vertical .thumb:pressed {
+    -fx-background-color: -roam-blue;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+/* Horizontal Scrollbar */
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-height: 10px;
+    -fx-padding: 2 4 2 4;
+}
+
+.scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 5px;
+    -fx-min-height: 6px;
+    -fx-pref-height: 6px;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb:pressed {
+    -fx-background-color: -roam-blue;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-width: 0;
+}
+
+.scroll-pane .scroll-bar:horizontal .increment-arrow,
+.scroll-pane .scroll-bar:horizontal .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+/* Dark mode scrollbar */
+.dark .scroll-pane .scroll-bar:vertical .track,
+.dark .scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark .scroll-pane .scroll-bar:vertical .thumb,
+.dark .scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark .scroll-pane .scroll-bar:vertical .thumb:hover,
+.dark .scroll-pane .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* ============================================
+   LIST VIEW - BENTO STYLE
+   ============================================ */
+
+.list-view {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 16;
+    -fx-padding: 8;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -roam-text-primary;
+    -fx-padding: 12 16;
+    -fx-background-radius: 12;
+}
+
+.list-cell:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.list-cell:selected {
+    -fx-background-color: -roam-row-selected;
+    -fx-text-fill: -roam-text-primary;
+}
+
+.list-cell:selected:hover {
+    -fx-background-color: -roam-row-selected-hover;
+}
+
+/* ============================================
+   TAB PANE - BENTO STYLE
+   ============================================ */
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 16;
+    -fx-padding: 6;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+}
+
+.tab:selected {
+    -fx-background-color: -roam-bg-primary;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0, 0, 2);
+}
+
+.tab .tab-label {
+    -fx-text-fill: -roam-text-secondary;
+    -fx-font-family: 'Poppins';
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins SemiBold';
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: transparent;
+    -fx-padding: 16 0 0 0;
+}
+
+/* ============================================
+   ACCORDION - BENTO STYLE  
+   ============================================ */
+
+.accordion {
+    -fx-background-color: transparent;
+}
+
+.titled-pane {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 16;
+}
+
+.titled-pane > .title {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 16;
+    -fx-padding: 16;
+}
+
+.titled-pane > .title:hover {
+    -fx-background-color: -roam-gray-light;
+}
+
+.titled-pane:expanded > .title {
+    -fx-background-radius: 16 16 0 0;
+}
+
+.titled-pane > .content {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 0 0 16 16;
+    -fx-padding: 16;
+}
+
+.titled-pane > .title > .arrow-button .arrow {
+    -fx-background-color: -roam-text-secondary;
+}
+
+/* ============================================
+   CONTEXT MENU - BENTO STYLE
+   ============================================ */
+
+.context-menu {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 16, 0, 0, 6);
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+    -fx-padding: 10 16;
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.menu-item .label {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins';
+}
+
+.separator-menu-item {
+    -fx-padding: 4 0;
+}
+
+.separator-menu-item > .line {
+    -fx-background-color: -roam-border;
+    -fx-pref-height: 1;
+}
+
+/* ============================================
+   TOOLTIP - BENTO STYLE
+   ============================================ */
+
+.tooltip {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-primary;
+    -fx-border-color: -roam-border;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 8 14;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 3);
+}
+
+/* ============================================
+   PROGRESS BAR & INDICATOR - BENTO STYLE
+   ============================================ */
+
+.progress-bar {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 8;
+    -fx-padding: 0;
+}
+
+.progress-bar .track {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 8;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -roam-blue;
+    -fx-background-radius: 8;
+    -fx-background-insets: 0;
+}
+
+.progress-indicator {
+    -fx-progress-color: -roam-blue;
+}
+
+/* ============================================
+   SPLIT PANE - BENTO STYLE
+   ============================================ */
+
+.split-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.split-pane-divider {
+    -fx-background-color: -roam-border;
+    -fx-padding: 0 2;
+}
+
+.split-pane-divider:hover {
+    -fx-background-color: -roam-blue;
+}

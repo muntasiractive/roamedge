@@ -1,0 +1,615 @@
+/* ============================================
+   BUTTONS - NOTION-STYLE PILL DESIGN
+   ============================================ */
+
+/* Navigation Buttons */
+.nav-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: -roam-text-secondary;
+  -fx-alignment: CENTER_LEFT;
+  -fx-font-size: 14px;
+  -fx-font-family: "Poppins";
+  -fx-padding: 12 20 12 16;
+  -fx-background-radius: 999px;
+  -fx-cursor: hand;
+}
+
+.nav-button:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-border-color: #d4d4d8;
+}
+
+.nav-button:selected {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: #ffffff;
+  -fx-font-family: "Poppins Bold";
+  -fx-border-color: transparent;
+  -fx-border-width: 0 0 0 4;
+  -fx-border-insets: 0;
+}
+
+/* Action Buttons (The "+" buttons) - Primary Style */
+.action-button {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: white;
+  -fx-font-family: "Poppins";
+  -fx-font-weight: 400;
+  -fx-font-size: 13px;
+  -fx-padding: 6 12;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: -roam-blue;
+  -fx-border-width: 1px;
+  -fx-cursor: hand;
+}
+
+.action-button:hover {
+  -fx-background-color: -roam-blue-hover;
+  -fx-border-color: -roam-blue-hover;
+}
+
+.action-button:pressed {
+  -fx-background-color: -roam-blue-pressed;
+  -fx-border-color: -roam-blue-pressed;
+}
+
+/* Standard Buttons - Notion Pill Style */
+.button {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #4b5563;
+  -fx-font-family: "Poppins";
+  -fx-font-weight: 400;
+  -fx-font-size: 13px;
+  -fx-padding: 6 12;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: #e4e4e7;
+  -fx-border-width: 1px;
+  -fx-cursor: hand;
+}
+
+.button:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-border-color: #d4d4d8;
+}
+
+.button:pressed {
+  -fx-background-color: #e5e7eb;
+  -fx-border-color: #c4c4cf;
+}
+
+.button:focused {
+  -fx-border-color: #2563eb;
+}
+
+.button:disabled {
+  -fx-opacity: 0.5;
+  -fx-cursor: default;
+}
+
+/* Primary Button - Blue accent Notion Style */
+.button-primary,
+.button.primary {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-blue;
+  -fx-border-width: 1px;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+}
+
+.button-primary:hover,
+.button.primary:hover {
+  -fx-background-color: -roam-blue-hover;
+  -fx-border-color: -roam-blue-hover;
+}
+
+.button-primary:pressed,
+.button.primary:pressed {
+  -fx-background-color: -roam-blue-pressed;
+  -fx-border-color: -roam-blue-pressed;
+}
+
+/* Danger/Delete Button - Notion Style */
+.button-danger,
+.button.danger {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: -roam-red;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: #fecaca;
+  -fx-border-width: 1px;
+}
+
+.button-danger:hover,
+.button.danger:hover {
+  -fx-background-color: -roam-red-bg;
+  -fx-border-color: -roam-red;
+}
+
+.button-danger:pressed,
+.button.danger:pressed {
+  -fx-background-color: -roam-red;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-red;
+}
+
+/* Success Button - Notion Style */
+.button-success,
+.button.success {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: -roam-green;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: #bbf7d0;
+  -fx-border-width: 1px;
+}
+
+.button-success:hover,
+.button.success:hover {
+  -fx-background-color: -roam-green-bg;
+  -fx-border-color: -roam-green;
+}
+
+.button-success:pressed,
+.button.success:pressed {
+  -fx-background-color: -roam-green;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-green;
+}
+
+/* Secondary Button - Outline Style Notion */
+.button-secondary,
+.button.secondary {
+  -fx-background-color: transparent;
+  -fx-text-fill: -roam-blue;
+  -fx-border-color: -roam-blue;
+  -fx-border-width: 1px;
+  -fx-border-radius: 999px;
+  -fx-background-radius: 999px;
+}
+
+.button-secondary:hover,
+.button.secondary:hover {
+  -fx-background-color: -roam-blue-light;
+}
+
+.button-secondary:pressed,
+.button.secondary:pressed {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: #ffffff;
+}
+
+/* Ghost Button - Minimal Style */
+.button-ghost,
+.button.ghost {
+  -fx-background-color: transparent;
+  -fx-text-fill: #4b5563;
+  -fx-background-radius: 999px;
+  -fx-border-color: transparent;
+  -fx-border-width: 1px;
+  -fx-border-radius: 999px;
+}
+
+.button-ghost:hover,
+.button.ghost:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-text-fill: -roam-text-primary;
+}
+
+.button-ghost:pressed,
+.button.ghost:pressed {
+  -fx-background-color: #e5e7eb;
+}
+
+/* Icon Button - Notion Style */
+.icon-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: #4b5563;
+  -fx-font-size: 18px;
+  -fx-padding: 8;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: transparent;
+  -fx-border-width: 1px;
+  -fx-cursor: hand;
+}
+
+.icon-button:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-border-color: #e4e4e7;
+}
+
+.icon-button:pressed {
+  -fx-background-color: #e5e7eb;
+  -fx-border-color: #d4d4d8;
+}
+
+.icon-button.round {
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+}
+
+/* Toggle Button Group - Notion Segmented Control */
+.toggle-button {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #4b5563;
+  -fx-font-family: "Poppins";
+  -fx-font-size: 13px;
+  -fx-padding: 6 14;
+  -fx-background-radius: 0;
+  -fx-border-color: #e4e4e7;
+  -fx-border-width: 1px;
+  -fx-cursor: hand;
+}
+
+.toggle-button:first-child {
+  -fx-background-radius: 999px 0 0 999px;
+  -fx-border-radius: 999px 0 0 999px;
+}
+
+.toggle-button:last-child {
+  -fx-background-radius: 0 999px 999px 0;
+}
+
+.toggle-button:selected {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-blue;
+}
+
+.toggle-button:hover:selected {
+  -fx-background-color: -roam-blue-hover;
+  -fx-border-color: -roam-blue-hover;
+}
+
+/* Segmented Button - Notion Pill Group */
+.segmented-button-bar {
+  -fx-background-color: #f3f4f6;
+  -fx-background-radius: 999px;
+  -fx-padding: 3;
+}
+
+.segmented-button-bar .toggle-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 999px;
+  -fx-border-color: transparent;
+  -fx-padding: 6 14;
+}
+
+.segmented-button-bar .toggle-button:selected {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: -roam-text-primary;
+  -fx-border-color: #e4e4e7;
+  -fx-border-width: 1px;
+}
+
+/* Chip Buttons - Small Tags Notion Style */
+.chip-button {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #4b5563;
+  -fx-font-family: "Poppins";
+  -fx-font-size: 12px;
+  -fx-padding: 4 12;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: #e4e4e7;
+  -fx-border-width: 1px;
+  -fx-cursor: hand;
+}
+
+.chip-button:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-border-color: #d4d4d8;
+}
+
+.chip-button:selected,
+.chip-button.active {
+  -fx-background-color: -roam-blue-light;
+  -fx-text-fill: -roam-blue;
+  -fx-border-color: -roam-blue;
+}
+
+/* FAB - Floating Action Button Notion Style */
+.fab {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: white;
+  -fx-background-radius: 50%;
+  -fx-border-radius: 50%;
+  -fx-border-color: -roam-blue;
+  -fx-border-width: 1px;
+  -fx-min-width: 48px;
+  -fx-min-height: 48px;
+  -fx-max-width: 48px;
+  -fx-max-height: 48px;
+  -fx-cursor: hand;
+}
+
+.fab:hover {
+  -fx-background-color: -roam-blue-hover;
+  -fx-border-color: -roam-blue-hover;
+}
+
+.fab:pressed {
+  -fx-background-color: -roam-blue-pressed;
+  -fx-border-color: -roam-blue-pressed;
+}
+
+.fab.mini {
+  -fx-min-width: 36px;
+  -fx-min-height: 36px;
+  -fx-max-width: 36px;
+  -fx-max-height: 36px;
+}
+
+/* Custom Sidebar Button - Notion Style */
+.sidebar-button {
+  -fx-pref-height: 40px;
+  -fx-padding: 6 14;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: #e4e4e7;
+  -fx-border-width: 1px;
+  -fx-background-color: #ffffff;
+  -fx-cursor: hand;
+  -fx-font-family: "Poppins";
+  -fx-font-size: 13px;
+  -fx-alignment: CENTER_LEFT;
+  -fx-text-fill: #4b5563;
+}
+
+.sidebar-button:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-border-color: #d4d4d8;
+}
+
+.sidebar-button:pressed {
+  -fx-background-color: #e5e7eb;
+  -fx-border-color: #c4c4cf;
+}
+
+.sidebar-button.selected {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: white;
+  -fx-border-color: -roam-blue;
+}
+
+.sidebar-button.selected:hover {
+  -fx-background-color: -roam-blue-hover;
+  -fx-border-color: -roam-blue-hover;
+}
+
+.sidebar-button.selected .ikonli-font-icon {
+  -fx-icon-color: white;
+}
+
+/* ============================================
+   PILL BUTTON STYLE (Notion-inspired)
+   ============================================ */
+
+.pill-button {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #4b5563;
+  -fx-background-radius: 999px;
+  -fx-border-radius: 999px;
+  -fx-border-color: #e4e4e7;
+  -fx-border-width: 1px;
+  -fx-font-family: "Poppins";
+  -fx-font-weight: 400;
+  -fx-font-size: 13px;
+  -fx-padding: 6 14;
+  -fx-cursor: hand;
+  -fx-alignment: CENTER;
+  -fx-content-display: LEFT;
+  -fx-graphic-text-gap: 6px;
+  -fx-min-height: 32px;
+}
+
+.pill-button .ikonli-font-icon {
+  -fx-icon-color: #4b5563;
+  -fx-icon-size: 14px;
+}
+
+.pill-button:hover {
+  -fx-background-color: #f3f4f6;
+  -fx-border-color: #d4d4d8;
+}
+
+.pill-button:hover .ikonli-font-icon {
+  -fx-icon-color: #374151;
+}
+
+.pill-button:pressed {
+  -fx-background-color: #e5e7eb;
+  -fx-border-color: #c4c4cf;
+}
+
+.pill-button:focused {
+  -fx-border-color: #2563eb;
+}
+
+.pill-button:disabled {
+  -fx-opacity: 0.5;
+  -fx-cursor: default;
+}
+
+/* Color Variants */
+.pill-button.primary {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-blue;
+}
+
+.pill-button.primary .ikonli-font-icon {
+  -fx-icon-color: #ffffff;
+}
+
+.pill-button.primary:hover {
+  -fx-background-color: -roam-blue-hover;
+  -fx-border-color: -roam-blue-hover;
+}
+
+.pill-button.primary:pressed {
+  -fx-background-color: -roam-blue-pressed;
+  -fx-border-color: -roam-blue-pressed;
+}
+
+.pill-button.success {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: -roam-green;
+  -fx-border-color: #bbf7d0;
+}
+
+.pill-button.success .ikonli-font-icon {
+  -fx-icon-color: -roam-green;
+}
+
+.pill-button.success:hover {
+  -fx-background-color: -roam-green-bg;
+  -fx-border-color: -roam-green;
+}
+
+.pill-button.success:pressed {
+  -fx-background-color: -roam-green;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-green;
+}
+
+.pill-button.success:pressed .ikonli-font-icon {
+  -fx-icon-color: #ffffff;
+}
+
+.pill-button.warning {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: -roam-orange;
+  -fx-border-color: #fed7aa;
+}
+
+.pill-button.warning .ikonli-font-icon {
+  -fx-icon-color: -roam-orange;
+}
+
+.pill-button.warning:hover {
+  -fx-background-color: -roam-orange-bg;
+  -fx-border-color: -roam-orange;
+}
+
+.pill-button.warning:pressed {
+  -fx-background-color: -roam-orange;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-orange;
+}
+
+.pill-button.warning:pressed .ikonli-font-icon {
+  -fx-icon-color: #ffffff;
+}
+
+.pill-button.danger {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: -roam-red;
+  -fx-border-color: #fecaca;
+}
+
+.pill-button.danger .ikonli-font-icon {
+  -fx-icon-color: -roam-red;
+}
+
+.pill-button.danger:hover {
+  -fx-background-color: -roam-red-bg;
+  -fx-border-color: -roam-red;
+}
+
+.pill-button.danger:pressed {
+  -fx-background-color: -roam-red;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-red;
+}
+
+.pill-button.danger:pressed .ikonli-font-icon {
+  -fx-icon-color: #ffffff;
+}
+
+/* ============================================
+   DARK MODE BUTTON OVERRIDES
+   ============================================ */
+
+.root.dark .button,
+.root.dark .pill-button {
+  -fx-background-color: -roam-gray-bg;
+  -fx-text-fill: -roam-text-secondary;
+  -fx-border-color: -roam-border;
+}
+
+.root.dark .button:hover,
+.root.dark .pill-button:hover {
+  -fx-background-color: -roam-gray-light;
+  -fx-border-color: derive(-roam-border, 10%);
+}
+
+.root.dark .button:pressed,
+.root.dark .pill-button:pressed {
+  -fx-background-color: derive(-roam-gray-light, -10%);
+}
+
+.root.dark .pill-button .ikonli-font-icon {
+  -fx-icon-color: -roam-text-secondary;
+}
+
+.root.dark .pill-button.primary {
+  -fx-background-color: -roam-blue;
+  -fx-text-fill: #ffffff;
+  -fx-border-color: -roam-blue;
+}
+
+.root.dark .pill-button.primary .ikonli-font-icon {
+  -fx-icon-color: #ffffff;
+}
+
+.root.dark .pill-button.success {
+  -fx-background-color: -roam-gray-bg;
+  -fx-text-fill: -roam-green;
+  -fx-border-color: -roam-green;
+}
+
+.root.dark .pill-button.success .ikonli-font-icon {
+  -fx-icon-color: -roam-green;
+}
+
+.root.dark .pill-button.warning {
+  -fx-background-color: -roam-gray-bg;
+  -fx-text-fill: -roam-orange;
+  -fx-border-color: -roam-orange;
+}
+
+.root.dark .pill-button.warning .ikonli-font-icon {
+  -fx-icon-color: -roam-orange;
+}
+
+.root.dark .pill-button.danger {
+  -fx-background-color: -roam-gray-bg;
+  -fx-text-fill: -roam-red;
+  -fx-border-color: -roam-red;
+}
+
+.root.dark .pill-button.danger .ikonli-font-icon {
+  -fx-icon-color: -roam-red;
+}
+
+.root.dark .icon-button {
+  -fx-text-fill: -roam-text-secondary;
+}
+
+.root.dark .icon-button:hover {
+  -fx-background-color: -roam-gray-light;
+  -fx-border-color: -roam-border;
+}
+
+.root.dark .sidebar-button {
+  -fx-background-color: -roam-gray-bg;
+  -fx-text-fill: -roam-text-secondary;
+  -fx-border-color: -roam-border;
+}
+
+.root.dark .sidebar-button:hover {
+  -fx-background-color: -roam-gray-light;
+}

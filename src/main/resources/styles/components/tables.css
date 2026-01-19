@@ -1,0 +1,222 @@
+/* ============================================
+   TABLE VIEW - BENTO GRID STYLE WITH ROUNDED EDGES
+   ============================================ */
+
+.table-view {
+    -fx-background-color: -roam-bg-primary;
+    background-color: -roam-bg-primary;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    padding: 0;
+    
+    /* Rounded border */
+    -fx-border-color: -roam-border;
+    border-color: -roam-border;
+    -fx-border-width: 1;
+    border-width: 1px;
+    -fx-border-radius: 16px;
+    border-radius: 16px;
+    -fx-background-radius: 16px;
+    
+    /* Material elevation */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 16, 0, 0, 4);
+    
+    /* Remove internal cell borders */
+    -fx-table-cell-border-color: transparent;
+}
+
+/* Container styling */
+.table-view-container {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 20px;
+    -fx-padding: 16;
+}
+
+/* Remove default corner and placeholder styling */
+.table-view .corner {
+    -fx-background-color: -roam-gray-bg;
+    background-color: -roam-gray-bg;
+    -fx-background-radius: 0 16px 0 0;
+}
+
+.table-view .placeholder {
+    -fx-background-color: transparent;
+    background-color: transparent;
+}
+
+/* Header background */
+.table-view .column-header-background {
+    -fx-background-color: -roam-gray-bg;
+    background-color: -roam-gray-bg;
+    -fx-background-insets: 0;
+    -fx-background-radius: 16px 16px 0 0;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: -roam-gray-bg;
+    background-color: -roam-gray-bg;
+}
+
+/* Header cells */
+.table-view .column-header {
+    -fx-background-color: -roam-gray-bg;
+    background-color: -roam-gray-bg;
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: 'Poppins SemiBold';
+    font-family: 'Poppins SemiBold';
+    -fx-text-fill: -roam-text-secondary;
+    -fx-font-size: 12px;
+    font-size: 12px;
+    -fx-padding: 16 20;
+    padding: 16px 20px;
+    -fx-text-transform: uppercase;
+}
+
+/* Table rows */
+.table-row-cell {
+    -fx-background-color: -roam-bg-primary;
+    background-color: -roam-bg-primary;
+    -fx-background-insets: 0;
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -roam-gray-light;
+    background-color: -roam-gray-light;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: -roam-row-hover;
+    background-color: -roam-row-hover;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -roam-row-selected;
+    background-color: -roam-row-selected;
+}
+
+.table-row-cell:selected:hover {
+    -fx-background-color: -roam-row-selected-hover;
+    background-color: -roam-row-selected-hover;
+}
+
+/* Table cells */
+.table-cell {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-border-color: transparent;
+    border-color: transparent;
+    -fx-text-fill: -roam-text-primary;
+    -fx-padding: 16 20;
+    padding: 16px 20px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+}
+
+.table-cell:selected {
+    -fx-text-fill: -roam-text-primary;
+}
+
+/* Last row rounded corners */
+.table-row-cell:filled:last {
+    -fx-background-radius: 0 0 16px 16px;
+}
+
+/* Remove vertical/horizontal lines between cells */
+.table-view .column-header-background .nested-column-header .column-header {
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
+
+/* ============================================
+   PAGINATION STYLING
+   ============================================ */
+
+.pagination {
+    -fx-padding: 16 0 0 0;
+}
+
+.pagination .pagination-control {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+}
+
+.pagination .pagination-control .left-arrow-button,
+.pagination .pagination-control .right-arrow-button {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 10px;
+    -fx-padding: 10 14;
+    -fx-cursor: hand;
+}
+
+.pagination .pagination-control .left-arrow-button:hover,
+.pagination .pagination-control .right-arrow-button:hover {
+    -fx-background-color: -roam-gray-light;
+}
+
+.pagination .pagination-control .left-arrow,
+.pagination .pagination-control .right-arrow {
+    -fx-background-color: -roam-text-secondary;
+}
+
+.pagination .pagination-control .number-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-min-width: 36px;
+    -fx-min-height: 36px;
+    -fx-text-fill: -roam-text-secondary;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.pagination .pagination-control .number-button:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.pagination .pagination-control .number-button:selected {
+    -fx-background-color: -roam-blue;
+    -fx-text-fill: white;
+}
+
+/* ============================================
+   SCROLL BAR STYLING
+   ============================================ */
+
+.table-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 4;
+}
+
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-background-radius: 4px;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: -roam-border;
+    -fx-background-radius: 4px;
+    -fx-min-width: 8px;
+}
+
+.table-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: -roam-text-hint;
+}
+
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-view .scroll-bar:vertical .increment-arrow,
+.table-view .scroll-bar:vertical .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}

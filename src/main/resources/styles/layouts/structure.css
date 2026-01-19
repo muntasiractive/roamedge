@@ -1,0 +1,101 @@
+/* Sidebar Container (legacy - kept for compatibility) */
+.sidebar {
+    -fx-background-color: -roam-gray-bg;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-pref-width: 240;
+    -fx-background-radius: 0 0 0 8;
+}
+
+/* Content Area */
+.content-area {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 0;
+}
+
+.dark .content-area {
+    -fx-background-color: #121212;
+}
+
+/* Main Layout - Rounded window with drop shadow (no border) */
+.main-layout {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+
+/* Dark mode window */
+.dark .main-layout {
+    -fx-border-color: transparent;
+}
+
+/* Scroll Pane */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+/* Scrollbar styling */
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 2;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: -roam-border;
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: -roam-text-hint;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* Split Pane */
+.split-pane {
+    -fx-background-color: transparent;
+}
+
+.split-pane .split-pane-divider {
+    -fx-background-color: -roam-border;
+    -fx-padding: 0 1 0 1;
+}
+
+/* ============================================
+   APP CONTAINER (Main window wrapper)
+   ============================================ */
+
+.app-container {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0, 0, 4);
+}
+
+.app-container.maximized {
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}
+
+/* Dark mode */
+.dark .app-container {
+    -fx-background-color: #121212;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 20, 0, 0, 4);
+}
+
+.dark .app-container.maximized {
+    -fx-background-radius: 0;
+    -fx-effect: none;
+}

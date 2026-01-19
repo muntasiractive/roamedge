@@ -1,0 +1,135 @@
+Initialized native services in: C:\Users\munta\scoop\apps\gradle\current\.gradle\native
+Initialized jansi services in: C:\Users\munta\scoop\apps\gradle\current\.gradle\native
+Found daemon DaemonInfo{pid=18236, address=[bc04d487-7718-4113-b637-94c52ea9a3b0 port:59260, addresses:[/127.0.0.1]], state=Idle, lastBusy=1768845241243, context=DefaultDaemonContext[uid=f3a0a330-781f-4d11-b55c-2b2e7a493cc4,javaHome=C:\Users\munta\.antigravity\extensions\redhat.java-1.51.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\munta\scoop\apps\gradle\current\.gradle\daemon,pid=18236,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=C:\Users\munta\scoop\apps\temurin21-jdk\current (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=f3a0a330-781f-4d11-b55c-2b2e7a493cc4,javaHome=C:\Users\munta\.antigravity\extensions\redhat.java-1.51.0-win32-x64\jre\21.0.9-win32-x86_64,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=C:\Users\munta\scoop\apps\gradle\current\.gradle\daemon,pid=18236,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 24236). The daemon log file: C:\Users\munta\scoop\apps\gradle\current\.gradle\daemon\8.14\daemon-24236.out.log
+Starting 13th build in daemon [uptime: 33 mins 25.243 secs, performance: 100%, GC rate: 0.06/s, heap usage: 10% of 512 MiB, non-heap usage: 22% of 384 MiB]
+Using 12 worker leases.
+Not watching A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\settings.gradle'.
+Projects loaded. Root project using build file 'A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build.gradle'.
+Included projects: [root project 'roam']
+
+> Configure project :
+Evaluating root project 'roam' using build file 'A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build.gradle'.
+Resolved plugin [id: 'java']
+Resolved plugin [id: 'application']
+Resolved plugin [id: 'org.openjfx.javafxplugin', version: '0.1.0']
+------------------------------------------------------------------------
+Detecting the operating system and CPU architecture
+------------------------------------------------------------------------
+os.detected.name=windows
+os.detected.arch=x86_64
+os.detected.bitness=64
+os.detected.version=10.0
+os.detected.version.major=10
+os.detected.version.minor=0
+os.detected.classifier=windows-x86_64
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'run'
+Selected primary task 'clean' from project :
+Selected primary task 'run' from project :
+Tasks to be executed: [task ':clean', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':run']
+Tasks that were excluded: []
+Resolve mutations for :clean (Thread[#764,Execution worker,5,main]) started.
+:clean (Thread[#764,Execution worker,5,main]) started.
+destroyer locations for task group 0 (Thread[#765,Execution worker Thread 2,5,main]) started.
+
+> Task :clean
+Caching disabled for task ':clean' because:
+  Build cache is disabled
+Task ':clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :compileJava (Thread[#764,Execution worker,5,main]) started.
+:compileJava (Thread[#764,Execution worker,5,main]) started.
+
+> Task :compileJava
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  Output property 'destinationDirectory' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\classes\java\main has been removed.
+  Output property 'destinationDirectory' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\classes\java\main\com has been removed.
+  Output property 'destinationDirectory' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\classes\java\main\com\roam has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':compileJava'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Users\munta\scoop\apps\temurin21-jdk\current'.
+Compiling with JDK Java compiler API.
+Note: A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\src\main\java\com\roam\view\components\OperationTableView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\src\main\java\com\roam\view\components\OperationTableView.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Class dependency analysis for incremental compilation took 0.03 secs.
+Created classpath snapshot for incremental compilation in 0.015 secs.
+Resolve mutations for :processResources (Thread[#764,Execution worker,5,main]) started.
+:processResources (Thread[#774,Execution worker Thread 10,5,main]) started.
+
+> Task :processResources
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':processResources' is not up-to-date because:
+  Output property 'destinationDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\resources\main has been removed.
+  Output property 'destinationDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\resources\main\db has been removed.
+  Output property 'destinationDir' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\resources\main\db\migration has been removed.
+  and more...
+Resolve mutations for :classes (Thread[#764,Execution worker,5,main]) started.
+:classes (Thread[#764,Execution worker,5,main]) started.
+
+> Task :classes
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :jar (Thread[#764,Execution worker,5,main]) started.
+:jar (Thread[#764,Execution worker,5,main]) started.
+
+> Task :jar
+Caching disabled for task ':jar' because:
+  Build cache is disabled
+  Not worth caching
+Task ':jar' is not up-to-date because:
+  Output property 'archiveFile' file A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\libs\roam-1.0.0.jar has been removed.
+Resolve mutations for :run (Thread[#764,Execution worker,5,main]) started.
+:run (Thread[#764,Execution worker,5,main]) started.
+
+> Task :run FAILED
+Caching disabled for task ':run' because:
+  Build cache is disabled
+Task ':run' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Starting process 'command 'C:\Users\munta\scoop\apps\temurin21-jdk\current\bin\java.exe''. Working directory: A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java Command: C:\Users\munta\scoop\apps\temurin21-jdk\current\bin\java.exe -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp A:\Roam_Drive01\Assets\Operational Assets\Noor\roam-java\build\libs\roam-1.0.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.flywaydb\flyway-core\10.4.1\f16f5055a2e2deb0691d9103b845db17e8bd51cc\flyway-core-10.4.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-analyzers-common\8.11.2\7a74c5c2dd082b08c644a9016bc6ff66c8f27cc\lucene-analyzers-common-8.11.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.2\4bfc12adfe4842bf07b657f0369c4cb522955686\commons-logging-1.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.owasp.encoder\encoder\1.2.3\35ae93be1524b161525da2c9a110019616f67548\encoder-1.2.3.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.reactfx\reactfx\2.0-M5\aa02bc40ebbb87a76d4b188516294612c8972b80\reactfx-2.0-M5.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.fxmisc.wellbehaved\wellbehavedfx\0.3.3\c69c986469f23feee75f09812357e6b6a0657d57\wellbehavedfx-0.3.3.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.github.mangstadt\vinnie\2.0.2\c5ac6b631bd5d0fb0a34a14cb51e83283aaff63e\vinnie-2.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\io.github.typhon0\AnimateFX\1.2.4\9a32062004de323588e6ce376047de5dc4b01908\AnimateFX-1.2.4.jar --module-path C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\io.github.mkpaz\atlantafx-base\2.0.1\51d2bfa35150921fe5b8b5e3c1a1bf78a6d57684\atlantafx-base-2.0.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.calendarfx\view\11.12.7\b227fd95ad772bcb2acb877edbd6d3521982d03\view-11.12.7.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-javafx\12.3.1\6df78c8f23f4509f88b8e05c32da64b7dc494356\ikonli-javafx-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-feather-pack\12.3.1\5d2e77a7dc19f325b277b5369be7dafe1d413017\ikonli-feather-pack-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-material2-pack\12.3.1\1403f36cafcff3d2dd293df01131d8835e6b3fa1\ikonli-material2-pack-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-bootstrapicons-pack\12.3.1\8b0dc79a85c903a53792fee21aa696944ade762a\ikonli-bootstrapicons-pack-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-dashicons-pack\12.3.1\ecc48f5e6ff7837ed7048e6c4da4899aba6a3df\ikonli-dashicons-pack-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-boxicons-pack\12.3.1\fe15d11e1a733e2af3af9cf8b4b4b4e4408d83cb\ikonli-boxicons-pack-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.hibernate.orm\hibernate-core\6.4.1.Final\3dcefddf6609e6491d37208bcc0cab1273598cbd\hibernate-core-6.4.1.Final.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.persistence\jakarta.persistence-api\3.1.0\66901fa1c373c6aff65c13791cc11da72060a8d6\jakarta.persistence-api-3.1.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.h2database\h2\2.2.224\7bdade27d8cd197d9b5ce9dc251f41d2edc5f7ad\h2-2.2.224.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.fxmisc.richtext\richtextfx\0.11.2\4365092d043b15734b76e655185e297b56a6f056\richtextfx-0.11.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.commonmark\commonmark-ext-gfm-tables\0.21.0\fb7d65fa89a4cfcd2f51535d2549b570cf1dbd1a\commonmark-ext-gfm-tables-0.21.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.commonmark\commonmark-ext-gfm-strikethrough\0.21.0\953f4b71e133a98fcca93f3c3f4e58b895b76d1f\commonmark-ext-gfm-strikethrough-0.21.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.commonmark\commonmark-ext-task-list-items\0.21.0\3aafb756507be546e1aa1f6f8ee6c0f1e71ebf4a\commonmark-ext-task-list-items-0.21.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.commonmark\commonmark\0.21.0\c98f0473b17c87fe4fa2fc62a7c6523a2fe018f0\commonmark-0.21.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\net.sf.biweekly\biweekly\0.6.8\4342433be8faaffc8aa52a3feb5674e9d26d0e02\biweekly-0.6.8.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.4.14\d98bc162275134cdf1518774da4a2a17ef6fb94d\logback-classic-1.4.14.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.mnode.ical4j\ical4j\4.0.0-rc5\bdce23e80db81d943f79ac766544434b9dc82059\ical4j-4.0.0-rc5.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.9\7cf2726fdcfbc8610f9a71fb3ed639871f315340\slf4j-api-2.0.9.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.dataformat\jackson-dataformat-toml\2.16.1\2f1827686617fe5ef03de721656c2238f7050536\jackson-dataformat-toml-2.16.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.16.1\9456bb3cdd0f79f91a5f730a1b1bb041a380c91f\jackson-core-2.16.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.16.1\fd441d574a71e7d10a4f73de6609f881d8cdfeec\jackson-annotations-2.16.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.16.1\36a418325c618e440e5ccb80b75c705d894f50bd\jackson-datatype-jsr310-2.16.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.16.1\2a16efeb840c45af1e2f31753dfe76795278b73\jackson-databind-2.16.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-queryparser\9.9.1\12d844fe224f6f97c510ac20d68903ed7f626f6c\lucene-queryparser-9.9.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-highlighter\9.9.1\30928513461bf79a5cb057e84da7d34a1e53227d\lucene-highlighter-9.9.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-sandbox\9.9.1\272e588fd3d8c0a401b28a1ac715f27044bf62ec\lucene-sandbox-9.9.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-queries\9.9.1\d157547bd24edc8e9d9d59c273107dc3ac5fde5e\lucene-queries-9.9.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-memory\9.9.1\49f820b1b321860fa42a4f7583e8ed8f77b9c1c2\lucene-memory-9.9.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.lucene\lucene-core\9.9.1\55249fa9a0ed321adcf8283c6f3b649a6812b0a9\lucene-core-9.9.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.springframework.security\spring-security-crypto\6.2.1\d7c4f4e8fe5ae84dd1da76094ee8a0a7e214923d\spring-security-crypto-6.2.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\32.1.3-jre\f306708742ce2bf0fb0901216183bc14073feae\guava-32.1.3-jre.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.hibernate.validator\hibernate-validator\8.0.1.Final\e49e116b3d3928060599b176b3538bb848718e95\hibernate-validator-8.0.1.Final.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.validation\jakarta.validation-api\3.0.2\92b6631659ba35ca09e44874d3eb936edfeee532\jakarta.validation-api-3.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish\jakarta.el\4.0.2\d67e18e7b3500dc91fe941ed3a1807074eaac750\jakarta.el-4.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\eu.iamgio\animated\1.3.0\598d40691c8e34c71e5d2fe125e1fdc0885e9d2c\animated-1.3.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-fxml\21\4a1cd270e1ae03ae73110eb68622afd457c6f903\javafx-fxml-21-win.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-web\21\f53cab2e01c28dd3a26d250145e1ddc86fcf125a\javafx-web-21-win.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-controls\21\76e295d84578a3d9688e092aae3f2ff1cf3e83a9\javafx-controls-21-win.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-fontawesome-pack\12.3.1\cc471319e1e684bc646fc8050e389f82a9b4358d\ikonli-fontawesome-pack-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.kordamp.ikonli\ikonli-core\12.3.1\50c5658c1a5aeeec30320c6be71274d01f5fb869\ikonli-core-12.3.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.transaction\jakarta.transaction-api\2.0.1\51a520e3fae406abb84e2e1148e6746ce3f80a1a\jakarta.transaction-api-2.0.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.5.0.Final\c19307cc11f28f5e2679347e633a3294d865334d\jboss-logging-3.5.0.Final.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\6.0.6.Final\77a5f94b56d49508e0ee334751db5b78e5ccd50c\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\io.smallrye\jandex\3.1.2\a6c1c89925c7df06242b03dddb353116ceb9584c\jandex-3.1.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.5.1\3fe0bed568c62df5e89f4f174c101eab25345b6c\classmate-1.5.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.14.7\34efde5f0bb93afc94aaf9d400521899c4806873\byte-buddy-1.14.7.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\4.0.2\e4e4e0c5b0d42054d00dc4023901572a60d368c7\jaxb-runtime-4.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-core\4.0.2\8c29249f6c10f4ee08967783831580b0f5c5360\jaxb-core-4.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\4.0.0\bbb399208d288b15ec101fa4fcfc4bd77cedc97a\jakarta.xml.bind-api-4.0.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.1\4c28afe1991a941d7702fe1362c365f0a8641d1e\jakarta.inject-api-2.0.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.13.0\5a02e48521624faaf5ff4d99afc88b01686af655\antlr4-runtime-4.13.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10.1\b3add478d4382b78ea20b1671390a858002feb6c\gson-2.10.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.controlsfx\controlsfx\11.1.1\d303c563c23d5176346e8d05932afbec421060ae\controlsfx-11.1.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.fxmisc.undo\undofx\2.1.1\69e1b938bd6d12c48ab07478cc09386a1fba3d2d\undofx-2.1.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.fxmisc.flowless\flowless\0.7.2\522609a0b40e50dac17ec0b3627f4b247d710ab8\flowless-0.7.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.4.14\4d3c2248219ac0effeb380ed4c5280a80bf395e8\logback-core-1.4.14.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.37.0\ba74746d38026581c12166e164bb3c15e90cc4ea\checker-qual-3.37.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.21.1\6d9b10773b5237df178a7b3c1b4208df7d0e7f94\error_prone_annotations-2.21.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.el\jakarta.el-api\4.0.0\ba9834bd2dba5014072bacbafecffaec1673b0f9\jakarta.el-api-4.0.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-media\21\f5e89e981be5c3c6f316b6f8b7b49686cd7c6d58\javafx-media-21-win.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-graphics\21\8083d97ea236079c82cf8e3463b62990340346d4\javafx-graphics-21-win.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.eclipse.angus\angus-activation\2.0.0\72369f4e2314d38de2dcbb277141ef0226f73151\angus-activation-2.0.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\jakarta.activation\jakarta.activation-api\2.1.1\88c774ab863a21fb2fc4219af95379fafe499a31\jakarta.activation-api-2.1.1.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.16.0\4e3eb3d79888d76b54e28b350915b5dc3919c9de\commons-codec-1.16.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.14.0\1ed471194b02f2c6cb734a0cd6f6f107c673afae\commons-lang3-3.14.0.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.threeten\threeten-extra\1.7.2\b2e5f470c6c97fee4c05c03eb9c546695a7784c2\threeten-extra-1.7.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-base\21\a7e334fbb619859e1010cad06ddcf16e774c87a0\javafx-base-21-win.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\4.0.2\24e167be69c29ebb7ee0a3b1f9b546f1dfd111fc\txw2-4.0.2.jar;C:\Users\munta\scoop\apps\gradle\current\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\4.1.1\9b3769c76235bc283b060da4fae2318c6d53f07e\istack-commons-runtime-4.1.1.jar --module com.roam/com.roam.RoamApplication
+Successfully started process 'command 'C:\Users\munta\scoop\apps\temurin21-jdk\current\bin\java.exe''
+Error occurred during initialization of boot layer
+java.lang.module.FindException: Module com.roam not found
+
+[Incubating] Problems report is available at: file:///A:/Roam_Drive01/Assets/Operational%20Assets/Noor/roam-java/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':run'.
+> Process 'command 'C:\Users\munta\scoop\apps\temurin21-jdk\current\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3s
+5 actionable tasks: 5 executed
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
+Watched directory hierarchies: []

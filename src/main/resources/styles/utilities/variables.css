@@ -1,0 +1,170 @@
+/* Root Variables & Global Styles */
+.root {
+    -fx-base: #FFFFFF;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    
+    /* Color Palette */
+    -roam-blue: #4285f4;
+    -roam-blue-hover: #3367d6;
+    -roam-blue-pressed: #2565d4;
+    -roam-blue-light: #E3F2FD;
+    -roam-gray-bg: #F5F5F5;
+    -roam-gray-light: #FAFAFA;
+    -roam-border: #E0E0E0;
+    -roam-text-primary: #212121;
+    -roam-text-secondary: #616161;
+    -roam-text-hint: #9E9E9E;
+    -roam-text-tertiary: #9E9E9E;
+    -roam-white: #FFFFFF;
+    
+    /* Accent colors */
+    -roam-accent: #4285f4;
+    -roam-accent-muted: #E3F2FD;
+    -roam-hover: #F0F0F0;
+    
+    /* Status Colors - WCAG Compliant */
+    -roam-red: #D32F2F;
+    -roam-red-hover: #B71C1C;
+    -roam-red-bg: #FFEBEE;
+    -roam-orange: #F57C00;
+    -roam-orange-bg: #FFF3E0;
+    -roam-yellow: #F9A825;
+    -roam-yellow-bg: #FFF8E1;
+    -roam-green: #388E3C;
+    -roam-green-bg: #E8F5E9;
+    -roam-blue-tag: #1976D2;
+    -roam-blue-tag-bg: #E3F2FD;
+    -roam-purple: #9c27b0;
+    -roam-purple-bg: #F3E5F5;
+    
+    /* Interactive States */
+    -roam-row-hover: #F0F4FF;
+    -roam-row-selected: #E3F2FD;
+    -roam-row-selected-hover: #BBDEFB;
+    
+    /* Priority colors */
+    -roam-priority-high: #C62828;
+    -roam-priority-medium: #F9A825;
+    -roam-priority-low: #616161;
+    
+    /* Metrics - Standard radius is 8px for consistency */
+    -roam-radius: 8px;
+    -roam-radius-small: 6px;
+    -roam-radius-tiny: 4px;
+    -roam-radius-large: 12px;
+    
+    -roam-bg-primary: #FFFFFF;
+    
+    /* AtlantaFX compatibility */
+    -color-bg-default: -roam-gray-bg;
+    -color-fg-default: -roam-text-primary;
+}
+
+/* Dark mode - applies when .dark class is on any element (including root) */
+.dark, .root.dark {
+    -fx-base: #121212;
+    -fx-background-color: #121212;
+    -fx-text-fill: #FFFFFF;
+
+    -roam-bg-primary: #121212;
+    -roam-gray-bg: #1E1E1E;
+    -roam-gray-light: #2D2D2D;
+    -roam-border: #424242;
+    -roam-white: #FFFFFF;
+    
+    -roam-text-primary: #FFFFFF;
+    -roam-text-secondary: #B0B0B0;
+    -roam-text-hint: #757575;
+    -roam-text-tertiary: #757575;
+    
+    /* Accent colors */
+    -roam-accent: #8ab4f8;
+    -roam-accent-muted: rgba(138, 180, 248, 0.2);
+    -roam-hover: #2D2D2D;
+    
+    -roam-blue: #8ab4f8;
+    -roam-blue-hover: #aecbfa;
+    -roam-blue-pressed: #d2e3fc;
+    -roam-blue-light: #1e2a38;
+    
+    /* Status Colors */
+    -roam-red: #ef5350;
+    -roam-red-hover: #d32f2f;
+    -roam-red-bg: rgba(239, 83, 80, 0.15);
+    -roam-orange: #ffa726;
+    -roam-orange-bg: rgba(255, 167, 38, 0.15);
+    -roam-yellow: #ffca28;
+    -roam-yellow-bg: rgba(255, 202, 40, 0.15);
+    -roam-green: #66bb6a;
+    -roam-green-bg: rgba(102, 187, 106, 0.15);
+    -roam-blue-tag: #42a5f5;
+    -roam-blue-tag-bg: rgba(66, 165, 245, 0.15);
+    -roam-purple: #ba68c8;
+    -roam-purple-bg: rgba(186, 104, 200, 0.15);
+    
+    /* Interactive States */
+    -roam-row-hover: rgba(138, 180, 248, 0.1);
+    -roam-row-selected: rgba(138, 180, 248, 0.2);
+    -roam-row-selected-hover: rgba(138, 180, 248, 0.3);
+    
+    /* Priority colors - dark mode */
+    -roam-priority-high: #ef5350;
+    -roam-priority-medium: #ffca28;
+    -roam-priority-low: #9E9E9E;
+    
+    /* AtlantaFX compatibility */
+    -color-bg-default: -roam-gray-bg;
+    -color-fg-default: -roam-text-primary;
+}
+
+/* Dark mode for dialog panes (they don't inherit from root) */
+.dialog-pane.dark {
+    -fx-base: #121212;
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #FFFFFF;
+
+    -roam-bg-primary: #121212;
+    -roam-gray-bg: #1E1E1E;
+    -roam-gray-light: #2D2D2D;
+    -roam-border: #424242;
+    -roam-white: #FFFFFF;
+    
+    -roam-text-primary: #FFFFFF;
+    -roam-text-secondary: #B0B0B0;
+    -roam-text-hint: #757575;
+    
+    -roam-blue: #8ab4f8;
+    -roam-blue-hover: #aecbfa;
+    -roam-blue-pressed: #d2e3fc;
+    -roam-blue-light: #1e2a38;
+    
+    /* Status Colors */
+    -roam-red: #ef5350;
+    -roam-red-hover: #d32f2f;
+    -roam-red-bg: rgba(239, 83, 80, 0.15);
+    -roam-orange: #ffa726;
+    -roam-orange-bg: rgba(255, 167, 38, 0.15);
+    -roam-yellow: #ffca28;
+    -roam-yellow-bg: rgba(255, 202, 40, 0.15);
+    -roam-green: #66bb6a;
+    -roam-green-bg: rgba(102, 187, 106, 0.15);
+    -roam-blue-tag: #42a5f5;
+    -roam-blue-tag-bg: rgba(66, 165, 245, 0.15);
+    -roam-purple: #ba68c8;
+    -roam-purple-bg: rgba(186, 104, 200, 0.15);
+    
+    /* Interactive States */
+    -roam-row-hover: rgba(138, 180, 248, 0.1);
+    -roam-row-selected: rgba(138, 180, 248, 0.2);
+    -roam-row-selected-hover: rgba(138, 180, 248, 0.3);
+    
+    /* Priority colors - dark mode */
+    -roam-priority-high: #ef5350;
+    -roam-priority-medium: #ffca28;
+    -roam-priority-low: #9E9E9E;
+    
+    /* AtlantaFX compatibility */
+    -color-bg-default: -roam-gray-bg;
+    -color-fg-default: -roam-text-primary;
+}

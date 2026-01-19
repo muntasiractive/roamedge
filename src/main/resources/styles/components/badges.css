@@ -1,0 +1,73 @@
+/* Priority Badges - Notion Style Pill */
+.priority-high {
+    -fx-background-color: -roam-red-bg;
+    -fx-text-fill: -roam-red;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.priority-medium {
+    -fx-background-color: -roam-orange-bg;
+    -fx-text-fill: -roam-orange;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.priority-low {
+    -fx-background-color: -roam-green-bg;
+    -fx-text-fill: -roam-green;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+/* Status Badges - Notion Style Pill */
+.status-ongoing {
+    -fx-background-color: -roam-blue-tag-bg;
+    -fx-text-fill: -roam-blue-tag;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.status-in-progress {
+    -fx-background-color: -roam-orange-bg;
+    -fx-text-fill: -roam-orange;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}
+
+.status-end {
+    -fx-background-color: -roam-green-bg;
+    -fx-text-fill: -roam-green;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+}

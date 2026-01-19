@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="roam-pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <!-- Entity classes -->
+        <class>com.roam.model.Operation</class>
+        <class>com.roam.model.Task</class>
+        <class>com.roam.model.Wiki</class>
+        <class>com.roam.model.Tag</class>
+        <class>com.roam.model.WikiTemplate</class>
+        <class>com.roam.model.CalendarEvent</class>
+        <class>com.roam.model.CalendarSource</class>
+        <class>com.roam.model.JournalEntry</class>
+        <class>com.roam.model.JournalTemplate</class>
+        <class>com.roam.model.Region</class>
+        
+        <properties>
+            <!-- H2 Database Configuration -->
+            <!-- Credentials are now loaded dynamically from DatabaseConfig -->
+            <!-- Set environment variables: ROAM_DB_USER, ROAM_DB_PASSWORD -->
+            <!-- Or create ~/.roam/database.properties file -->
+            <property name="jakarta.persistence.jdbc.driver" value="${db.driver}"/>
+            <property name="jakarta.persistence.jdbc.url" value="${db.url}"/>
+            <property name="jakarta.persistence.jdbc.user" value="${db.username}"/>
+            <property name="jakarta.persistence.jdbc.password" value="${db.password}"/>
+            
+            <!-- Hibernate Configuration -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <!-- hbm2ddl.auto REMOVED - Flyway now manages schema migrations -->
+            <!-- Use 'validate' to ensure entities match database schema -->
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            
+            <!-- Performance Settings -->
+            <property name="hibernate.connection.pool_size" value="10"/>
+            <property name="hibernate.current_session_context_class" value="thread"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>

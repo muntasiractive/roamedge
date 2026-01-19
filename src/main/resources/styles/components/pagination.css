@@ -1,0 +1,101 @@
+/* ============================================
+   PAGINATION CONTROLS - NOTION-INSPIRED
+   ============================================ */
+
+/* Pagination Container */
+.pagination-container {
+    -fx-background-color: -roam-bg-primary;
+    -fx-padding: 16 20 20 20;
+}
+
+/* Navigation Buttons (Prev/Next) */
+.pagination-button {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 10px;
+    -fx-padding: 10 14;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.pagination-button:hover {
+    -fx-background-color: derive(-roam-gray-bg, -5%);
+}
+
+.pagination-button:pressed {
+    -fx-background-color: -roam-border;
+}
+
+.pagination-button:disabled {
+    -fx-background-color: -roam-gray-light;
+    -fx-opacity: 0.5;
+}
+
+.pagination-button .ikonli-font-icon {
+    -fx-icon-color: -roam-text-secondary;
+}
+
+.pagination-button:disabled .ikonli-font-icon {
+    -fx-icon-color: -roam-text-hint;
+}
+
+/* Page Number Buttons */
+.pagination-number {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-min-width: 36px;
+    -fx-min-height: 36px;
+    -fx-max-width: 36px;
+    -fx-max-height: 36px;
+    -fx-text-fill: -roam-text-secondary;
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.pagination-number:hover {
+    -fx-background-color: -roam-gray-bg;
+    -fx-text-fill: -roam-text-primary;
+}
+
+.pagination-number-active {
+    -fx-background-color: -roam-blue;
+    -fx-text-fill: white;
+}
+
+.pagination-number-active:hover {
+    -fx-background-color: -roam-blue-hover;
+    -fx-text-fill: white;
+}
+
+/* Page Numbers Container */
+.page-numbers {
+    -fx-spacing: 4;
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+.dark .pagination-container {
+    -fx-background-color: -roam-bg-primary;
+}
+
+.dark .pagination-button {
+    -fx-background-color: -roam-gray-light;
+}
+
+.dark .pagination-button:hover {
+    -fx-background-color: derive(-roam-gray-light, 10%);
+}
+
+.dark .pagination-number:hover {
+    -fx-background-color: -roam-gray-light;
+}
+
+.dark .pagination-number-active {
+    -fx-background-color: -roam-blue;
+}

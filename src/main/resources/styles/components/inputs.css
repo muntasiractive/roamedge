@@ -1,0 +1,622 @@
+/* Search Bar - Notion Style */
+.search-bar {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 999px;
+    -fx-border-color: #e4e4e7;
+    -fx-border-radius: 999px;
+    -fx-border-width: 1px;
+    -fx-padding: 4 12;
+}
+
+.search-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 4 8;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 13px;
+    -fx-text-fill: #374151;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+.search-field:focused {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+/* Sidebar Search Input Styling - Notion Style */
+.sidebar-search-container {
+    -fx-alignment: CENTER_LEFT;
+    -fx-max-width: 190px;
+}
+
+.sidebar-search-field {
+    -fx-pref-height: 36px;
+    -fx-padding: 0 12;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-border-width: 1px;
+    -fx-border-color: #e4e4e7;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #374151;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+.sidebar-search-field:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #2563eb;
+}
+
+/* Text Inputs - Notion Style */
+.text-field, .text-area {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #e4e4e7;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 8 12;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 13px;
+    -fx-text-fill: #374151;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 1px;
+    -fx-background-color: #ffffff;
+}
+
+/* ============================================
+   FORM CONTROLS - NOTION STYLE
+   ============================================ */
+
+/* ComboBox / ChoiceBox Styling - Notion Style */
+.combo-box, .choice-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e4e4e7;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 2 8;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 13px;
+    -fx-min-height: 36px;
+    -fx-cursor: hand;
+}
+
+.combo-box:hover, .choice-box:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-border-color: #d4d4d8;
+}
+
+.combo-box:focused, .choice-box:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #2563eb;
+    -fx-border-width: 1px;
+}
+
+.combo-box .list-cell, .choice-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #374151;
+    -fx-padding: 6 10;
+    -fx-font-family: 'Poppins';
+}
+
+.combo-box .arrow-button, .choice-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 8;
+}
+
+.combo-box .arrow, .choice-box .arrow {
+    -fx-background-color: #6b7280;
+}
+
+.combo-box-popup .list-view, .choice-box-popup .list-view {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #e4e4e7;
+}
+
+.combo-box-popup .list-cell, .choice-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #374151;
+    -fx-padding: 8 12;
+    -fx-font-family: 'Poppins';
+    -fx-background-radius: 6px;
+}
+
+.combo-box-popup .list-cell:hover, .choice-box-popup .list-cell:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+.combo-box-popup .list-cell:selected, .choice-box-popup .list-cell:selected {
+    -fx-background-color: -roam-blue-light;
+    -fx-text-fill: -roam-blue;
+}
+
+/* DatePicker Styling - Notion Style */
+.date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e4e4e7;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-min-height: 36px;
+    -fx-cursor: hand;
+}
+
+.date-picker:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-border-color: -roam-blue;
+}
+
+.date-picker:focused {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-blue;
+    -fx-border-width: 2px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 8 12;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 12px 12px 0;
+    -fx-padding: 0 12;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: -roam-text-secondary;
+}
+
+.date-picker-popup {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-border-color: -roam-border;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 16, 0, 0, 6);
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 16px 16px 0 0;
+    -fx-padding: 12;
+}
+
+.date-picker-popup .spinner-label {
+    -fx-font-family: 'Poppins SemiBold';
+    -fx-font-size: 14px;
+    -fx-text-fill: -roam-text-primary;
+}
+
+.date-picker-popup .day-cell {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins';
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.date-picker-popup .selected {
+    -fx-background-color: -roam-blue;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .today {
+    -fx-border-color: -roam-blue;
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+}
+
+/* MenuButton Styling */
+.menu-button {
+    -fx-background-color: -roam-gray-light;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 8 16;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+    -fx-text-fill: -roam-text-primary;
+    -fx-min-height: 40px;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-blue;
+}
+
+.menu-button:focused, .menu-button:showing {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-blue;
+    -fx-border-width: 2px;
+}
+
+.menu-button .arrow {
+    -fx-background-color: -roam-text-secondary;
+}
+
+.menu-button .context-menu {
+    -fx-background-color: -roam-bg-primary;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: -roam-border;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+.menu-button .menu-item {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-padding: 10 16;
+}
+
+.menu-button .menu-item:hover, .menu-button .menu-item:focused {
+    -fx-background-color: -roam-gray-bg;
+}
+
+.menu-button .menu-item .label {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins';
+}
+
+/* Spinner Styling */
+.spinner {
+    -fx-background-color: -roam-gray-light;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-min-height: 40px;
+}
+
+.spinner:focused {
+    -fx-border-color: -roam-blue;
+    -fx-border-width: 2px;
+}
+
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 8 12;
+    -fx-font-family: 'Poppins';
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-padding: 4 8;
+}
+
+.spinner .increment-arrow-button:hover, .spinner .decrement-arrow-button:hover {
+    -fx-background-color: -roam-gray-bg;
+}
+
+/* CheckBox Styling */
+.check-box {
+    -fx-text-fill: -roam-text-primary;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.check-box .box {
+    -fx-background-color: -roam-gray-light;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+}
+
+.check-box:hover .box {
+    -fx-border-color: -roam-blue;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -roam-blue;
+    -fx-border-color: -roam-blue;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+/* Toggle Switch / ToggleButton Styling */
+.toggle-button {
+    -fx-background-color: -roam-gray-light;
+    -fx-border-color: -roam-border;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 8 20;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+    -fx-text-fill: -roam-text-secondary;
+    -fx-cursor: hand;
+}
+
+.toggle-button:hover {
+    -fx-background-color: -roam-bg-primary;
+    -fx-border-color: -roam-blue;
+}
+
+.toggle-button:selected {
+    -fx-background-color: -roam-blue;
+    -fx-border-color: -roam-blue;
+    -fx-text-fill: white;
+}
+
+/* Slider Styling */
+.slider {
+    -fx-padding: 10 0;
+}
+
+.slider .track {
+    -fx-background-color: -roam-gray-bg;
+    -fx-background-radius: 4px;
+    -fx-pref-height: 8px;
+}
+
+.slider .thumb {
+    -fx-background-color: -roam-blue;
+    -fx-background-radius: 12px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(66,133,244,0.4), 8, 0, 0, 2);
+}
+
+.slider .thumb:hover {
+    -fx-background-color: -roam-blue-hover;
+    -fx-effect: dropshadow(gaussian, rgba(66,133,244,0.6), 10, 0, 0, 3);
+}
+
+.slider .colored-track {
+    -fx-background-color: -roam-blue;
+    -fx-background-radius: 4px;
+}
+
+/* ============================================
+   DARK MODE STYLES
+   ============================================ */
+
+/* Search Bar - Dark Mode */
+.dark .search-bar {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .search-field {
+    -fx-text-fill: #E5E5E5;
+    -fx-prompt-text-fill: #6B7280;
+}
+
+/* Sidebar Search - Dark Mode */
+.dark .sidebar-search-field {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+    -fx-text-fill: #E5E5E5;
+    -fx-prompt-text-fill: #6B7280;
+}
+
+.dark .sidebar-search-field:focused {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #8ab4f8;
+}
+
+/* Text Inputs - Dark Mode */
+.dark .text-field, .dark .text-area {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+    -fx-text-fill: #E5E5E5;
+    -fx-prompt-text-fill: #6B7280;
+}
+
+.dark .text-field:focused, .dark .text-area:focused {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #8ab4f8;
+}
+
+/* ComboBox / ChoiceBox - Dark Mode */
+.dark .combo-box, .dark .choice-box {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .combo-box:hover, .dark .choice-box:hover {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #444444;
+}
+
+.dark .combo-box:focused, .dark .choice-box:focused {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .combo-box .list-cell, .dark .choice-box .list-cell {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .combo-box .arrow, .dark .choice-box .arrow {
+    -fx-background-color: #9CA3AF;
+}
+
+.dark .combo-box-popup .list-view, .dark .choice-box-popup .list-view {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .combo-box-popup .list-cell, .dark .choice-box-popup .list-cell {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .combo-box-popup .list-cell:hover, .dark .choice-box-popup .list-cell:hover {
+    -fx-background-color: #2D2D2D;
+}
+
+.dark .combo-box-popup .list-cell:selected, .dark .choice-box-popup .list-cell:selected {
+    -fx-background-color: rgba(138, 180, 248, 0.2);
+    -fx-text-fill: #8ab4f8;
+}
+
+/* DatePicker - Dark Mode */
+.dark .date-picker {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .date-picker:hover {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .date-picker:focused {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .date-picker .text-field {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .date-picker .arrow-button .arrow {
+    -fx-background-color: #9CA3AF;
+}
+
+.dark .date-picker-popup {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .date-picker-popup .month-year-pane {
+    -fx-background-color: #2D2D2D;
+}
+
+.dark .date-picker-popup .spinner-label {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .date-picker-popup .day-cell {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .date-picker-popup .day-cell:hover {
+    -fx-background-color: #2D2D2D;
+}
+
+.dark .date-picker-popup .today {
+    -fx-border-color: #8ab4f8;
+}
+
+/* MenuButton - Dark Mode */
+.dark .menu-button {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .menu-button:hover {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .menu-button:focused, .dark .menu-button:showing {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .menu-button .arrow {
+    -fx-background-color: #9CA3AF;
+}
+
+.dark .menu-button .context-menu {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .menu-button .menu-item:hover, .dark .menu-button .menu-item:focused {
+    -fx-background-color: #2D2D2D;
+}
+
+.dark .menu-button .menu-item .label {
+    -fx-text-fill: #E5E5E5;
+}
+
+/* Spinner - Dark Mode */
+.dark .spinner {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .spinner:focused {
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .spinner .text-field {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .spinner .increment-arrow-button:hover, .dark .spinner .decrement-arrow-button:hover {
+    -fx-background-color: #2D2D2D;
+}
+
+/* CheckBox - Dark Mode */
+.dark .check-box {
+    -fx-text-fill: #E5E5E5;
+}
+
+.dark .check-box .box {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+}
+
+.dark .check-box:hover .box {
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .check-box:selected .box {
+    -fx-background-color: #8ab4f8;
+    -fx-border-color: #8ab4f8;
+}
+
+/* Toggle Button - Dark Mode */
+.dark .toggle-button {
+    -fx-background-color: #1F1F1F;
+    -fx-border-color: #333333;
+    -fx-text-fill: #9CA3AF;
+}
+
+.dark .toggle-button:hover {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #8ab4f8;
+}
+
+.dark .toggle-button:selected {
+    -fx-background-color: #8ab4f8;
+    -fx-border-color: #8ab4f8;
+    -fx-text-fill: #121212;
+}
+
+/* Slider - Dark Mode */
+.dark .slider .track {
+    -fx-background-color: #2D2D2D;
+}
+
+.dark .slider .thumb {
+    -fx-background-color: #8ab4f8;
+    -fx-effect: dropshadow(gaussian, rgba(138, 180, 248, 0.4), 8, 0, 0, 2);
+}
+
+.dark .slider .thumb:hover {
+    -fx-background-color: #aecbfa;
+    -fx-effect: dropshadow(gaussian, rgba(138, 180, 248, 0.6), 10, 0, 0, 3);
+}
+
+.dark .slider .colored-track {
+    -fx-background-color: #8ab4f8;
+}
