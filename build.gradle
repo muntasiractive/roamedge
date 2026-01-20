@@ -102,9 +102,31 @@ test {
 }
 
 application {
-    mainClass = 'com.roam.RoamApplication'
+    mainClass = 'com.roam.Launcher'
 }
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+tasks.startScripts {
+    doLast {
+        def windowsScriptFile = file getWindowsScript()
+        def unixScriptFile = file getUnixScript()
+        windowsScriptFile.text = windowsScriptFile.text.replaceFirst(/(set CLASSPATH=%APP_HOME%\\lib\\).*/, '$1*')
+    }
+}
+
+task packagePortable(type: Exec) {
+    dependsOn installDist
+    workingDir project.projectDir
+    commandLine 'jpackage',
+            '--type', 'app-image',
+            '--input', 'build/install/roam/lib',
+            '--dest', 'output',
+            '--main-jar', 'roam-1.0.0.jar',
+            '--main-class', 'com.roam.Launcher',
+            '--name', 'Roam',
+            '--app-version', '1.0.0',
+            '--icon', 'src/main/resources/icons/roam-icon.ico'
 }
